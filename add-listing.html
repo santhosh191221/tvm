@@ -81,6 +81,10 @@
                             <option value="Other">Other</option>
                         </select>
                     </div>
+                    <div id="other-category-container" class="hidden">
+                        <label for="other-category" class="block text-sm font-medium text-gray-700">If other, please specify</label>
+                        <input type="text" id="other-category" name="OtherCategory" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-orange-500 focus:ring-orange-500">
+                    </div>
                     <div>
                         <label for="service-location" class="block text-sm font-medium text-gray-700">Location</label>
                         <input type="text" id="service-location" name="Location" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-orange-500 focus:ring-orange-500">
@@ -253,6 +257,20 @@
                 });
             }
         });
+
+        // --- Logic for "Other" category textbox ---
+        const serviceCategorySelect = document.getElementById('service-category');
+        const otherCategoryContainer = document.getElementById('other-category-container');
+
+        if (serviceCategorySelect && otherCategoryContainer) {
+            serviceCategorySelect.addEventListener('change', function() {
+                if (this.value === 'Other') {
+                    otherCategoryContainer.classList.remove('hidden');
+                } else {
+                    otherCategoryContainer.classList.add('hidden');
+                }
+            });
+        }
 
     </script>
 
