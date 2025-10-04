@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Available Rooms</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            text-align: center;
+            color: #333;
+        }
+        .back-link {
+            display: block;
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 1.1em;
+            color: #007bff;
+            text-decoration: none;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        .room-list-section {
+            background-color: #fafafa;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin-bottom: 40px;
+        }
+        .room-list-section h2 {
+            text-align: left;
+        }
+        .room-list {
+            list-style-type: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 10px;
+        }
+        .room-list li {
+            background-color: #e9e9e9;
+            padding: 15px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .room-container {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+        .room-card {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            background-color: #fafafa;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+        .room-card img {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            object-fit: cover;
+            border-radius: 5px;
+            align-self: center;
+        }
+        .room-details {
+            flex: 1;
+        }
+        .room-details h3 {
+            margin-top: 0;
+            color: #444;
+        }
+        .room-details p {
+            color: #666;
+        }
+        .map-section {
+            margin-top: 40px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #fafafa;
+        }
+        .map-container {
+            position: relative;
+            overflow: hidden;
+            padding-top: 56.25%; /* 16:9 Aspect Ratio */
+        }
+        .map-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <a href="index.html" class="back-link">&larr; Back to Home</a>
+        <h1>Our Available Rooms</h1>
+
+        <div class="room-list-section">
+            <h2>Sample Room List</h2>
+            <ul class="room-list">
+                <li>Single Room</li>
+                <li>Double Room</li>
+                <li>Suite</li>
+                <li>Courtyard Double</li>
+                <li>Standard Single</li>
+                <li>Deluxe Garden View</li>
+                <li>Family Room with Balcony</li>
+                <li>Executive Suite</li>
+                <li>Poolside Twin Room</li>
+                <li>Penthouse</li>
+                <li>Studio Apartment</li>
+            </ul>
+        </div>
+
+        <div class="room-container">
+            <!-- Single Room -->
+            <div class="room-card" id="single-room">
+                <img src="https://via.placeholder.com/400x250.png?text=Single+Room" alt="Single Room">
+                <div class="room-details">
+                    <h3>Single Room</h3>
+                    <p>Perfect for the solo traveler, our Single Room offers a comfortable twin bed, a dedicated work desk with high-speed Wi-Fi, and an en-suite bathroom. Enjoy peace and quiet with all the essential amenities for a productive or restful stay.</p>
+                </div>
+            </div>
+
+            <!-- Double Room -->
+            <div class="room-card" id="double-room">
+                <img src="https://via.placeholder.com/400x250.png?text=Double+Room" alt="Double Room">
+                <div class="room-details">
+                    <h3>Double Room</h3>
+                    <p>Ideal for couples or friends, the Double Room is spacious and comfortable, featuring a queen-sized bed and a stunning city view. It includes a cozy seating area, a flat-screen TV, and complimentary toiletries to make your stay enjoyable.</p>
+                </div>
+            </div>
+
+            <!-- Suite -->
+            <div class="room-card" id="suite">
+                <img src="https://via.placeholder.com/400x250.png?text=Luxury+Suite" alt="Suite">
+                <div class="room-details">
+                    <h3>Suite</h3>
+                    <p>Experience ultimate luxury in our Suite. This expansive room includes a separate living area, a king-sized bed, and a private balcony. The lavish bathroom features a jacuzzi tub, and guests enjoy exclusive perks like complimentary breakfast and evening cocktails.</p>
+                </div>
+            </div>
+
+            <!-- Penthouse -->
+            <div class="room-card" id="penthouse">
+                <img src="https://via.placeholder.com/400x250.png?text=The+Penthouse" alt="Penthouse">
+                <div class="room-details">
+                    <h3>The Penthouse</h3>
+                    <p>Our exclusive Penthouse offers unparalleled views of the city and Arunachala hill. Featuring two bedrooms, a private terrace, and a fully equipped kitchenette, it's the pinnacle of luxury for discerning guests.</p>
+                </div>
+            </div>
+
+            <!-- Studio Apartment -->
+            <div class="room-card" id="studio">
+                <img src="https://via.placeholder.com/400x250.png?text=Studio+Apartment" alt="Studio Apartment">
+                <div class="room-details">
+                    <h3>Studio Apartment</h3>
+                    <p>For those planning a longer stay, our Studio Apartment provides all the comforts of home. It includes a small kitchen, living space, and a comfortable sleeping area, perfect for extended visits.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="map-section">
+            <h2>Our Location</h2>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31130.09035513078!2d79.05753955!3d12.22681945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bad337b0172d331%3A0x5e5359762221691a!2sTiruvannamalai%2C%20Tamil%20Nadu%2C%20India!5e0!3m2!1sen!2sus!4v1678886400000!5m2!1sen!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

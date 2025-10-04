@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Your Listing</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fdfaf6;
+        }
+        .form-container {
+            background-color: #fff;
+            border-radius: 1rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            border: 1px solid #f3e9e2;
+        }
+        .tab-button {
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+            border: 2px solid transparent;
+        }
+        .tab-button.active {
+            background-color: #fff;
+            color: #f97316;
+            border-color: #f97316;
+        }
+        .tab-button:not(.active) {
+            background-color: #f3f4f6;
+            color: #4b5563;
+        }
+        .form-section {
+            display: none;
+        }
+        .form-section.active {
+            display: block;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <div class="container mx-auto max-w-3xl my-12 px-4">
+        <div class="text-center mb-8">
+            <h1 class="text-4xl font-bold text-gray-800">List Your Business</h1>
+            <p class="mt-2 text-gray-600">Choose a category and fill out the form to get listed on our platform.</p>
+            <a href="index.html" class="mt-4 inline-block text-brand-orange font-semibold hover:underline">&larr; Back to Home</a>
+        </div>
+
+        <div class="form-container p-8">
+            <!-- Tabs -->
+            <div class="flex justify-center gap-4 mb-8 bg-gray-100 p-2 rounded-lg">
+                <button class="tab-button active" onclick="showForm('service')">Service</button>
+                <button class="tab-button" onclick="showForm('land')">Land</button>
+                <button class="tab-button" onclick="showForm('property')">Property</button>
+            </div>
+
+            <!-- Service Form -->
+            <div id="service-form" class="form-section active">
+                <h2 class="text-2xl font-semibold mb-6 text-center">List a Local Service</h2>
+                <form id="serviceListingForm" class="space-y-6">
+                    <input type="hidden" name="sheetName" value="Services">
+                    <div>
+                        <label for="service-name" class="block text-sm font-medium text-gray-700">Service/Business Name</label>
+                        <input type="text" id="service-name" name="Name" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-orange-500 focus:ring-orange-500">
+                    </div>
+                    <div>
+                        <label for="service-category" class="block text-sm font-medium text-gray-700">Category</label>
+                        <select id="service-category" name="Category" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-orange-500 focus:ring-orange-500">
+                            <option value="" disabled selected>Choose a category</option>
+                            <option value="Catering">Catering</option>
+                            <option value="Makeup">Makeup</option>
+                            <option value="Photography">Photography</option>
+                            <option value="Vehicle Rental">Vehicle Rental</option>
+                            <option value="Hall Booking">Hall Booking</option>
+                            <option value="Decoration">Decoration</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="service-location" class="block text-sm font-medium text-gray-700">Location</label>
+                        <input type="text" id="service-location" name="Location" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-orange-500 focus:ring-orange-500">
+                    </div>
+                    <div>
+                        <label for="service-contact" class="block text-sm font-medium text-gray-700">Contact Number</label>
+                        <input type="tel" id="service-contact" name="Contact" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-orange-500 focus:ring-orange-500">
+                    </div>
+                    <div>
+                        <label for="service-description" class="block text-sm font-medium text-gray-700">Description</label>
+                        <textarea id="service-description" name="Description" rows="3" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-orange-500 focus:ring-orange-500"></textarea>
+                    </div>
+                    <div>
+                        <label for="service-photo" class="block text-sm font-medium text-gray-700">Photo Upload</label>
+                        <input type="file" id="service-photo" name="Photo" accept="image/*" class="mt-1 block w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-orange-50 file:text-orange-700 hover:file:bg-orange-100">
+                    </div>
+                    <button type="submit" class="w-full bg-orange-500 text-white py-3 px-4 rounded-md font-semibold hover:bg-orange-600 transition">Submit Service Listing</button>
+                </form>
+            </div>
+
+            <!-- Land Form -->
+            <div id="land-form" class="form-section">
+                <h2 class="text-2xl font-semibold mb-6 text-center">List Land for Sale</h2>
+                <form id="landListingForm" class="space-y-6">
+                    <input type="hidden" name="sheetName" value="Lands">
+                    <div>
+                        <label for="land-title" class="block text-sm font-medium text-gray-700">Listing Title</label>
+                        <input type="text" id="land-title" name="Title" placeholder="e.g., 2 Acres Farmland" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-orange-500 focus:ring-orange-500">
+                    </div>
+                    <div>
+                        <label for="land-size" class="block text-sm font-medium text-gray-700">Land Size (in Acres/Sq.ft)</label>
+                        <input type="text" id="land-size" name="Size" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-orange-500 focus:ring-orange-500">
+                    </div>
+                    <div>
+                        <label for="land-location" class="block text-sm font-medium text-gray-700">Location</label>
+                        <input type="text" id="land-location" name="Location" placeholder="e.g., Near Girivalam Path" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-orange-500 focus:ring-orange-500">
+                    </div>
+                     <div>
+                        <label for="land-price" class="block text-sm font-medium text-gray-700">Price</label>
+                        <input type="text" id="land-price" name="Price" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-orange-500 focus:ring-orange-500">
+                    </div>
+                    <div>
+                        <label for="land-contact" class="block text-sm font-medium text-gray-700">Contact Number</label>
+                        <input type="tel" id="land-contact" name="Contact" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-orange-500 focus:ring-orange-500">
+                    </div>
+                    <div>
+                        <label for="land-description" class="block text-sm font-medium text-gray-700">Description</label>
+                        <textarea id="land-description" name="Description" rows="3" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-orange-500 focus:ring-orange-500"></textarea>
+                    </div>
+                    <div>
+                        <label for="land-photo" class="block text-sm font-medium text-gray-700">Photo Upload</label>
+                        <input type="file" id="land-photo" name="Photo" accept="image/*" class="mt-1 block w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-orange-50 file:text-orange-700 hover:file:bg-orange-100">
+                    </div>
+                    <button type="submit" class="w-full bg-orange-500 text-white py-3 px-4 rounded-md font-semibold hover:bg-orange-600 transition">Submit Land Listing</button>
+                </form>
+            </div>
+
+            <!-- Property Form -->
+            <div id="property-form" class="form-section">
+                <h2 class="text-2xl font-semibold mb-6 text-center">List a Property (Room, Hotel, etc.)</h2>
+                <form id="propertyListingForm" class="space-y-6">
+                    <input type="hidden" name="sheetName" value="Properties">
+                    <div>
+                        <label for="prop-name" class="block text-sm font-medium text-gray-700">Name of Property</label>
+                        <input type="text" id="prop-name" name="Name" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-orange-500 focus:ring-orange-500">
+                    </div>
+                    <div>
+                        <label for="prop-type" class="block text-sm font-medium text-gray-700">Type</label>
+                        <select id="prop-type" name="Type" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-orange-500 focus:ring-orange-500">
+                            <option value="" disabled selected>Choose an option</option>
+                            <option value="Hotel">Hotel</option>
+                            <option value="Room">Room</option>
+                            <option value="Resort">Resort</option>
+                            <option value="Lodge">Lodge</option>
+                            <option value="Guest House">Guest House</option>
+                            <option value="Single Room">Single Room</option>
+                            <option value="Double Room">Double Room</option>
+                            <option value="Suite">Suite</option>
+                            <option value="Penthouse">Penthouse</option>
+                            <option value="Studio Apartment">Studio Apartment</option>
+                        </select>
+                    </div>
+                     <div>
+                        <label for="prop-rooms" class="block text-sm font-medium text-gray-700">Rooms Available</label>
+                        <input type="number" id="prop-rooms" name="RoomsAvailable" min="1" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-orange-500 focus:ring-orange-500">
+                    </div>
+                    <div>
+                        <label for="prop-location" class="block text-sm font-medium text-gray-700">Location</label>
+                        <input type="text" id="prop-location" name="Location" placeholder="e.g., Near Annamalaiyar Temple" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-orange-500 focus:ring-orange-500">
+                    </div>
+                    <div>
+                        <label for="prop-contact" class="block text-sm font-medium text-gray-700">Contact Number</label>
+                        <input type="tel" id="prop-contact" name="Contact" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-orange-500 focus:ring-orange-500">
+                    </div>
+                    <div>
+                        <label for="prop-description" class="block text-sm font-medium text-gray-700">Description</label>
+                        <textarea id="prop-description" name="Description" rows="3" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-orange-500 focus:ring-orange-500"></textarea>
+                    </div>
+                    <div>
+                        <label for="prop-photo" class="block text-sm font-medium text-gray-700">Photo Upload</label>
+                        <input type="file" id="prop-photo" name="Photo" accept="image/*" class="mt-1 block w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-orange-50 file:text-orange-700 hover:file:bg-orange-100">
+                    </div>
+                    <button type="submit" class="w-full bg-orange-500 text-white py-3 px-4 rounded-md font-semibold hover:bg-orange-600 transition">Submit Property Listing</button>
+                </form>
+            </div>
+
+            <!-- Submission Status -->
+            <div id="submission-status" class="hidden mt-6 text-center">
+                <p class="font-semibold"></p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showForm(formName) {
+            // Hide all forms
+            document.querySelectorAll('.form-section').forEach(form => {
+                form.classList.remove('active');
+            });
+            // Deactivate all tabs
+            document.querySelectorAll('.tab-button').forEach(button => {
+                button.classList.remove('active');
+            });
+
+            // Show the selected form and activate its tab
+            document.getElementById(formName + '-form').classList.add('active'); // Error here, fixed
+            document.querySelector(`button[onclick="showForm('${formName}')"]`).classList.add('active'); // Error here, fixed
+        }
+
+        // --- Form Submission Logic ---
+        const scriptURL = 'YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL_HERE'; // IMPORTANT: Replace with your URL
+
+        const forms = [
+            document.getElementById('serviceListingForm'),
+            document.getElementById('landListingForm'),
+            document.getElementById('propertyListingForm'),
+        ];
+
+        const submissionStatus = document.getElementById('submission-status');
+
+        forms.forEach(form => {
+            if (form) {
+                form.addEventListener('submit', e => {
+                    e.preventDefault();
+                    const submitButton = form.querySelector('button[type="submit"]');
+                    const originalButtonText = submitButton.innerHTML;
+                    submitButton.disabled = true;
+                    submitButton.innerHTML = 'Submitting...';
+                    submissionStatus.classList.add('hidden');
+
+                    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                        .then(response => response.json()) // Changed to handle JSON response from Apps Script
+                        .then(data => {
+                            console.log('Success!', response);
+                            form.reset();
+                            submissionStatus.querySelector('p').textContent = 'Thank you! Your listing has been submitted successfully.';
+                            submissionStatus.querySelector('p').className = 'font-semibold text-green-600';
+                            submissionStatus.classList.remove('hidden');
+                        })
+                        .catch(error => {
+                            console.error('Error!', error.message);
+                            submissionStatus.querySelector('p').textContent = 'Oops! Something went wrong. Please try again.';
+                            submissionStatus.querySelector('p').className = 'font-semibold text-red-600';
+                            submissionStatus.classList.remove('hidden');
+                        })
+                        .finally(() => {
+                            submitButton.disabled = false;
+                            submitButton.innerHTML = originalButtonText;
+                        });
+                });
+            }
+        });
+
+    </script>
+
+</body>
+</html>
