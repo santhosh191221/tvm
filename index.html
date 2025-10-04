@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Tiruvannamalai</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fdfaf6;
+            color: #4a2c2a;
+        }
+        .hero-section {
+            background-image: linear-gradient(rgba(253, 250, 246, 0.8), rgba(253, 250, 246, 1)), url('https://placehold.co/1920x1080/f5e5d5/fdfaf6?text=Sacred+Temple+View');
+            background-size: cover;
+            background-position: center;
+        }
+        .text-brand-orange {
+            color: #f97316;
+        }
+        .bg-brand-orange {
+            background-color: #f97316;
+        }
+        .border-brand-orange {
+            border-color: #f97316;
+        }
+        .shadow-custom {
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+        }
+        .card {
+            background-color: #ffffff;
+            border: 1px solid #f3e9e2;
+            border-radius: 1rem;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+        }
+        .tag {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+        .tag-yellow { background-color: #fef9c3; color: #ca8a04; }
+        .tag-blue { background-color: #dbeafe; color: #2563eb; }
+        .tag-green { background-color: #dcfce7; color: #16a34a; }
+        .tag-gray { background-color: #f3f4f6; color: #4b5563; }
+        .rating-star { color: #facc15; }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header class="bg-white/80 backdrop-blur-sm sticky top-0 z-50 border-b border-gray-200/50">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <h1 class="text-xl font-bold text-brand-orange">Tiruvannamalai Guide</h1>
+            <div class="flex items-center space-x-4">
+                <nav class="hidden md:flex space-x-6 text-gray-700">
+                    <a href="#events" class="hover:text-brand-orange">Events</a>
+                    <a href="#services" class="hover:text-brand-orange">Services</a>
+                    <a href="#stay" class="hover:text-brand-orange">Stay</a>
+                </nav>
+                <div class="flex items-center space-x-2">
+                    <span class="text-sm font-semibold text-gray-700">En</span>
+                    <button class="bg-red-500 text-white text-xs font-bold px-2 py-1 rounded">20% OFF</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section py-20 md:py-32">
+        <div class="container mx-auto text-center px-6">
+            <h2 class="text-4xl md:text-6xl font-bold text-gray-800">
+                Discover <span class="text-brand-orange">Tiruvannamalai</span>
+            </h2>
+            <p class="mt-4 text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
+                Your complete guide to temple events, local services, exclusive offers, and live updates from the sacred city.
+            </p>
+            <div class="mt-10 flex flex-col sm:flex-row justify-center items-center gap-4">
+                <a href="#events" class="w-full sm:w-auto bg-brand-orange text-white font-semibold py-3 px-6 rounded-lg shadow-lg hover:bg-orange-600 transition duration-300 flex items-center justify-center gap-2">
+                    <i data-lucide="calendar-days"></i>
+                    Today's Events
+                </a>
+                <a href="#" class="w-full sm:w-auto bg-white text-gray-700 font-semibold py-3 px-6 rounded-lg border border-gray-300 hover:bg-gray-50 transition duration-300 flex items-center justify-center gap-2">
+                    <i data-lucide="map"></i>
+                    Explore Map
+                </a>
+            </div>
+        </div>
+        <div class="container mx-auto px-6 mt-16">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 max-w-4xl mx-auto">
+                <div class="card p-4 text-center">
+                    <i data-lucide="calendar" class="w-8 h-8 mx-auto text-brand-orange"></i>
+                    <p class="text-2xl font-bold mt-2">50+</p>
+                    <p class="text-sm text-gray-500">Annual Events</p>
+                </div>
+                <div class="card p-4 text-center">
+                    <i data-lucide="store" class="w-8 h-8 mx-auto text-brand-orange"></i>
+                    <p class="text-2xl font-bold mt-2">100+</p>
+                    <p class="text-sm text-gray-500">Local Services</p>
+                </div>
+                 <div class="card p-4 text-center">
+                    <i data-lucide="sparkles" class="w-8 h-8 mx-auto text-brand-orange"></i>
+                    <p class="text-2xl font-bold mt-2">200+</p>
+                    <p class="text-sm text-gray-500">Active Offers</p>
+                </div>
+                <div class="card p-4 text-center">
+                    <i data-lucide="map-pin" class="w-8 h-8 mx-auto text-brand-orange"></i>
+                    <p class="text-2xl font-bold mt-2">Live</p>
+                    <p class="text-sm text-gray-500">Location Updates</p>
+                </div>
+            </div>
+        </div>
+        <div class="mt-16 text-center animate-bounce">
+            <div class="inline-block border-2 border-brand-orange rounded-full p-1">
+                <i data-lucide="mouse" class="text-brand-orange"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Temple Events Section -->
+    <section id="events" class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h3 class="text-3xl md:text-4xl font-bold">Temple Events & Functions</h3>
+                <p class="mt-2 text-gray-600">Stay updated with sacred rituals, festivals, and special ceremonies at Arunachaleswar Temple.</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                <div class="card p-6">
+                    <div class="flex justify-between items-start">
+                        <h4 class="text-xl font-semibold">Girivalam (Pradosham)</h4>
+                        <span class="tag tag-blue">Monthly</span>
+                    </div>
+                    <p class="mt-2 text-gray-500">Circumambulation of the sacred Arunachala Hill during Pradosham.</p>
+                    <div class="mt-4 space-y-2 text-gray-700">
+                        <p class="flex items-center gap-2"><i data-lucide="calendar" class="w-4 h-4 text-brand-orange"></i> 2025-10-08</p>
+                        <p class="flex items-center gap-2"><i data-lucide="clock" class="w-4 h-4 text-brand-orange"></i> 05:00 AM - 09:00 PM (Full Day)</p>
+                        <p class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-brand-orange"></i> Arunachaleswar Temple</p>
+                    </div>
+                </div>
+                 <div class="card p-6">
+                    <div class="flex justify-between items-start">
+                        <h4 class="text-xl font-semibold">Abhishekam</h4>
+                        <span class="tag tag-yellow">Daily</span>
+                    </div>
+                    <p class="mt-2 text-gray-500">Daily ritual bathing ceremony of Lord Shiva with sacred offerings.</p>
+                     <div class="mt-4 space-y-2 text-gray-700">
+                        <p class="flex items-center gap-2"><i data-lucide="calendar" class="w-4 h-4 text-brand-orange"></i> Daily</p>
+                        <p class="flex items-center gap-2"><i data-lucide="clock" class="w-4 h-4 text-brand-orange"></i> 09:00 AM - 12:00 PM (3 Hours)</p>
+                        <p class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-brand-orange"></i> Arunachaleswar Temple</p>
+                    </div>
+                </div>
+                 <div class="card p-6">
+                    <div class="flex justify-between items-start">
+                        <h4 class="text-xl font-semibold">Karthigai Deepam Festival</h4>
+                        <span class="tag tag-green">Annual</span>
+                    </div>
+                    <p class="mt-2 text-gray-500">Grand festival of lights celebrating the manifestation of Shiva as a column of fire.</p>
+                     <div class="mt-4 space-y-2 text-gray-700">
+                        <p class="flex items-center gap-2"><i data-lucide="calendar" class="w-4 h-4 text-brand-orange"></i> 2025-11-15</p>
+                        <p class="flex items-center gap-2"><i data-lucide="clock" class="w-4 h-4 text-brand-orange"></i> All Day (10 Days)</p>
+                        <p class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-brand-orange"></i> Arunachaleswar Temple</p>
+                    </div>
+                </div>
+                 <div class="card p-6">
+                    <div class="flex justify-between items-start">
+                        <h4 class="text-xl font-semibold">Maha Shivaratri</h4>
+                        <span class="tag tag-green">Annual</span>
+                    </div>
+                    <p class="mt-2 text-gray-500">The great night of Shiva with special prayers and fasting.</p>
+                     <div class="mt-4 space-y-2 text-gray-700">
+                        <p class="flex items-center gap-2"><i data-lucide="calendar" class="w-4 h-4 text-brand-orange"></i> 2026-02-26</p>
+                        <p class="flex items-center gap-2"><i data-lucide="clock" class="w-4 h-4 text-brand-orange"></i> All Day (24 Hours)</p>
+                        <p class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-brand-orange"></i> Arunachaleswar Temple</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Local Services Section -->
+    <section id="services" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h3 class="text-3xl md:text-4xl font-bold">Local Services Directory</h3>
+                <p class="mt-2 text-gray-600">Trusted service providers for all your needs in Tiruvannamalai.</p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto mb-12">
+                <div class="rounded-2xl overflow-hidden shadow-lg group relative">
+                    <img src="https://placehold.co/1200x600/f5e5d5/4a2c2a?text=Premium+Catering" alt="Catering" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                    <div class="absolute top-4 left-4">
+                        <span class="tag tag-yellow">Featured</span>
+                    </div>
+                    <div class="absolute bottom-0 left-0 p-6 text-white">
+                        <h4 class="text-3xl font-bold">Premium Catering Services</h4>
+                        <p class="mt-1">Authentic Tamil cuisine for your special occasions.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service Cards -->
+                <div class="card p-6">
+                    <div class="flex justify-between items-start">
+                        <div class="flex items-center gap-3">
+                            <i data-lucide="utensils-crossed" class="w-6 h-6 text-brand-orange"></i>
+                            <h4 class="text-lg font-semibold">Sri Krishna Catering</h4>
+                        </div>
+                        <span class="tag tag-gray text-xs">Catering</span>
+                    </div>
+                    <p class="mt-2 text-sm text-gray-500">Authentic south Indian catering for all occasions.</p>
+                    <div class="mt-4 space-y-2 text-sm">
+                        <p class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-gray-400"></i> Sannadhi Street</p>
+                        <p class="flex items-center gap-2"><i data-lucide="phone" class="w-4 h-4 text-gray-400"></i> +91 9876543210</p>
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 flex justify-between items-center">
+                        <p class="flex items-center gap-1">
+                            <i data-lucide="star" class="w-4 h-4 rating-star fill-current"></i>
+                            <span class="font-semibold">4.8</span>
+                            <span class="text-sm text-gray-400">/5.0</span>
+                        </p>
+                        <a href="#" class="bg-brand-orange text-white text-sm font-semibold px-4 py-2 rounded-lg hover:bg-orange-600 transition">Contact</a>
+                    </div>
+                </div>
+                <div class="card p-6">
+                    <div class="flex justify-between items-start">
+                         <div class="flex items-center gap-3">
+                             <i data-lucide="gem" class="w-6 h-6 text-brand-orange"></i>
+                             <h4 class="text-lg font-semibold">Lakshmi Bridal Makeup</h4>
+                         </div>
+                        <span class="tag tag-gray text-xs">Makeup</span>
+                    </div>
+                    <p class="mt-2 text-sm text-gray-500">Professional bridal and event makeup services.</p>
+                    <div class="mt-4 space-y-2 text-sm">
+                        <p class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-gray-400"></i> Ramana Nagar</p>
+                        <p class="flex items-center gap-2"><i data-lucide="phone" class="w-4 h-4 text-gray-400"></i> +91 9876543211</p>
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 flex justify-between items-center">
+                        <p class="flex items-center gap-1">
+                            <i data-lucide="star" class="w-4 h-4 rating-star fill-current"></i>
+                            <span class="font-semibold">4.9</span>
+                            <span class="text-sm text-gray-400">/5.0</span>
+                        </p>
+                        <a href="#" class="bg-brand-orange text-white text-sm font-semibold px-4 py-2 rounded-lg hover:bg-orange-600 transition">Contact</a>
+                    </div>
+                </div>
+                <div class="card p-6">
+                    <div class="flex justify-between items-start">
+                         <div class="flex items-center gap-3">
+                             <i data-lucide="camera" class="w-6 h-6 text-brand-orange"></i>
+                             <h4 class="text-lg font-semibold">Arunachala Photography</h4>
+                         </div>
+                        <span class="tag tag-gray text-xs">Photography</span>
+                    </div>
+                    <p class="mt-2 text-sm text-gray-500">Wedding and event photography specialists.</p>
+                    <div class="mt-4 space-y-2 text-sm">
+                        <p class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-gray-400"></i> Chengam Road</p>
+                        <p class="flex items-center gap-2"><i data-lucide="phone" class="w-4 h-4 text-gray-400"></i> +91 9876543212</p>
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 flex justify-between items-center">
+                        <p class="flex items-center gap-1">
+                            <i data-lucide="star" class="w-4 h-4 rating-star fill-current"></i>
+                            <span class="font-semibold">4.7</span>
+                            <span class="text-sm text-gray-400">/5.0</span>
+                        </p>
+                        <a href="#" class="bg-brand-orange text-white text-sm font-semibold px-4 py-2 rounded-lg hover:bg-orange-600 transition">Contact</a>
+                    </div>
+                </div>
+                 <div class="card p-6">
+                    <div class="flex justify-between items-start">
+                        <div class="flex items-center gap-3">
+                            <i data-lucide="car" class="w-6 h-6 text-brand-orange"></i>
+                            <h4 class="text-lg font-semibold">Temple Travels</h4>
+                        </div>
+                        <span class="tag tag-gray text-xs">Vehicle Rental</span>
+                    </div>
+                    <p class="mt-2 text-sm text-gray-500">Car and van rentals for temple visits and tours.</p>
+                    <div class="mt-4 space-y-2 text-sm">
+                        <p class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-gray-400"></i> Bus Stand Area</p>
+                        <p class="flex items-center gap-2"><i data-lucide="phone" class="w-4 h-4 text-gray-400"></i> +91 9876543213</p>
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 flex justify-between items-center">
+                        <p class="flex items-center gap-1">
+                            <i data-lucide="star" class="w-4 h-4 rating-star fill-current"></i>
+                            <span class="font-semibold">4.6</span>
+                            <span class="text-sm text-gray-400">/5.0</span>
+                        </p>
+                        <a href="#" class="bg-brand-orange text-white text-sm font-semibold px-4 py-2 rounded-lg hover:bg-orange-600 transition">Contact</a>
+                    </div>
+                </div>
+                 <div class="card p-6">
+                    <div class="flex justify-between items-start">
+                         <div class="flex items-center gap-3">
+                             <i data-lucide="home" class="w-6 h-6 text-brand-orange"></i>
+                             <h4 class="text-lg font-semibold">Shiva Mandapam</h4>
+                         </div>
+                        <span class="tag tag-gray text-xs">Hall Booking</span>
+                    </div>
+                    <p class="mt-2 text-sm text-gray-500">Spacious halls for weddings and events.</p>
+                    <div class="mt-4 space-y-2 text-sm">
+                        <p class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-gray-400"></i> Polur Road</p>
+                        <p class="flex items-center gap-2"><i data-lucide="phone" class="w-4 h-4 text-gray-400"></i> +91 9876543214</p>
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 flex justify-between items-center">
+                        <p class="flex items-center gap-1">
+                            <i data-lucide="star" class="w-4 h-4 rating-star fill-current"></i>
+                            <span class="font-semibold">4.8</span>
+                            <span class="text-sm text-gray-400">/5.0</span>
+                        </p>
+                        <a href="#" class="bg-brand-orange text-white text-sm font-semibold px-4 py-2 rounded-lg hover:bg-orange-600 transition">Contact</a>
+                    </div>
+                </div>
+                 <div class="card p-6">
+                    <div class="flex justify-between items-start">
+                         <div class="flex items-center gap-3">
+                             <i data-lucide="flower-2" class="w-6 h-6 text-brand-orange"></i>
+                             <h4 class="text-lg font-semibold">Auspicious Decorators</h4>
+                         </div>
+                        <span class="tag tag-gray text-xs">Decoration</span>
+                    </div>
+                    <p class="mt-2 text-sm text-gray-500">Traditional and modern event decoration.</p>
+                    <div class="mt-4 space-y-2 text-sm">
+                        <p class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-gray-400"></i> Market Street</p>
+                        <p class="flex items-center gap-2"><i data-lucide="phone" class="w-4 h-4 text-gray-400"></i> +91 9876543215</p>
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 flex justify-between items-center">
+                        <p class="flex items-center gap-1">
+                            <i data-lucide="star" class="w-4 h-4 rating-star fill-current"></i>
+                            <span class="font-semibold">4.7</span>
+                            <span class="text-sm text-gray-400">/5.0</span>
+                        </p>
+                        <a href="#" class="bg-brand-orange text-white text-sm font-semibold px-4 py-2 rounded-lg hover:bg-orange-600 transition">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Places to Stay Section -->
+    <section id="stay" class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h3 class="text-3xl md:text-4xl font-bold">Places to Stay</h3>
+                <p class="mt-2 text-gray-600">Comfortable accommodation options near Arunachaleswar Temple.</p>
+            </div>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Stay Cards -->
+                <div class="card overflow-hidden">
+                    <div class="p-6">
+                         <div class="flex justify-between items-start">
+                             <div class="flex items-center gap-3">
+                                <i data-lucide="building-2" class="w-6 h-6 text-brand-orange"></i>
+                                <div>
+                                    <h4 class="text-lg font-semibold">Arunachala Heritage Hotel</h4>
+                                    <p class="flex items-center gap-1 text-sm">
+                                        <i data-lucide="star" class="w-4 h-4 rating-star fill-current"></i>
+                                        <span class="font-semibold">4.5</span>
+                                        <span class="text-gray-400">/5.0</span>
+                                    </p>
+                                </div>
+                             </div>
+                            <span class="tag tag-gray text-xs">Hotel</span>
+                        </div>
+                        <div class="my-4 flex justify-between items-end">
+                            <p class="text-sm text-gray-500">25 Rooms</p>
+                            <p class="text-xl font-bold text-brand-orange">₹2,500/night</p>
+                        </div>
+                        <div class="flex flex-wrap gap-2 text-xs">
+                           <span class="flex items-center gap-1 bg-green-100 text-green-800 px-2 py-1 rounded-full"><i data-lucide="wifi"></i> WiFi</span>
+                           <span class="flex items-center gap-1 bg-green-100 text-green-800 px-2 py-1 rounded-full"><i data-lucide="parking-circle"></i> Parking</span>
+                           <span class="flex items-center gap-1 bg-green-100 text-green-800 px-2 py-1 rounded-full"><i data-lucide="croissant"></i> Restaurant</span>
+                        </div>
+                         <div class="mt-4 space-y-2 text-sm">
+                            <p class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-gray-400"></i> Sannadhi Street</p>
+                            <p class="flex items-center gap-2"><i data-lucide="phone" class="w-4 h-4 text-gray-400"></i> +91 9876543220</p>
+                        </div>
+                    </div>
+                    <a href="#" class="block bg-brand-orange text-white text-center font-semibold py-3 hover:bg-orange-600 transition">Book Now</a>
+                </div>
+                 <div class="card overflow-hidden">
+                    <div class="p-6">
+                         <div class="flex justify-between items-start">
+                             <div class="flex items-center gap-3">
+                                <i data-lucide="home" class="w-6 h-6 text-brand-orange"></i>
+                                <div>
+                                    <h4 class="text-lg font-semibold">Temple View Guest House</h4>
+                                    <p class="flex items-center gap-1 text-sm">
+                                        <i data-lucide="star" class="w-4 h-4 rating-star fill-current"></i>
+                                        <span class="font-semibold">4.3</span>
+                                        <span class="text-gray-400">/5.0</span>
+                                    </p>
+                                </div>
+                             </div>
+                            <span class="tag tag-gray text-xs">Guest House</span>
+                        </div>
+                        <div class="my-4 flex justify-between items-end">
+                            <p class="text-sm text-gray-500">12 Rooms</p>
+                            <p class="text-xl font-bold text-brand-orange">₹1,200/night</p>
+                        </div>
+                        <div class="flex flex-wrap gap-2 text-xs">
+                           <span class="flex items-center gap-1 bg-green-100 text-green-800 px-2 py-1 rounded-full"><i data-lucide="wifi"></i> WiFi</span>
+                           <span class="flex items-center gap-1 bg-green-100 text-green-800 px-2 py-1 rounded-full"><i data-lucide="mountain-snow"></i> Temple View</span>
+                        </div>
+                         <div class="mt-4 space-y-2 text-sm">
+                            <p class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-gray-400"></i> Ramana Nagar</p>
+                            <p class="flex items-center gap-2"><i data-lucide="phone" class="w-4 h-4 text-gray-400"></i> +91 9876543221</p>
+                        </div>
+                    </div>
+                    <a href="#" class="block bg-brand-orange text-white text-center font-semibold py-3 hover:bg-orange-600 transition">Book Now</a>
+                </div>
+                 <div class="card overflow-hidden">
+                    <div class="p-6">
+                         <div class="flex justify-between items-start">
+                             <div class="flex items-center gap-3">
+                                <i data-lucide="bed-double" class="w-6 h-6 text-brand-orange"></i>
+                                <div>
+                                    <h4 class="text-lg font-semibold">Shiva Residency</h4>
+                                    <p class="flex items-center gap-1 text-sm">
+                                        <i data-lucide="star" class="w-4 h-4 rating-star fill-current"></i>
+                                        <span class="font-semibold">4.0</span>
+                                        <span class="text-gray-400">/5.0</span>
+                                    </p>
+                                </div>
+                             </div>
+                            <span class="tag tag-gray text-xs">Budget Hotel</span>
+                        </div>
+                        <div class="my-4 flex justify-between items-end">
+                            <p class="text-sm text-gray-500">18 Rooms</p>
+                            <p class="text-xl font-bold text-brand-orange">₹800/night</p>
+                        </div>
+                        <div class="flex flex-wrap gap-2 text-xs">
+                           <span class="flex items-center gap-1 bg-green-100 text-green-800 px-2 py-1 rounded-full"><i data-lucide="parking-circle"></i> Parking</span>
+                           <span class="flex items-center gap-1 bg-green-100 text-green-800 px-2 py-1 rounded-full"><i data-lucide="clock"></i> 24/7 Service</span>
+                        </div>
+                         <div class="mt-4 space-y-2 text-sm">
+                            <p class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-gray-400"></i> Chengam Road</p>
+                            <p class="flex items-center gap-2"><i data-lucide="phone" class="w-4 h-4 text-gray-400"></i> +91 9876543222</p>
+                        </div>
+                    </div>
+                    <a href="#" class="block bg-brand-orange text-white text-center font-semibold py-3 hover:bg-orange-600 transition">Book Now</a>
+                </div>
+                <div class="card overflow-hidden">
+                    <div class="p-6">
+                         <div class="flex justify-between items-start">
+                             <div class="flex items-center gap-3">
+                                <i data-lucide="tent" class="w-6 h-6 text-brand-orange"></i>
+                                <div>
+                                    <h4 class="text-lg font-semibold">Ramana Ashram Guest House</h4>
+                                    <p class="flex items-center gap-1 text-sm">
+                                        <i data-lucide="star" class="w-4 h-4 rating-star fill-current"></i>
+                                        <span class="font-semibold">4.7</span>
+                                        <span class="text-gray-400">/5.0</span>
+                                    </p>
+                                </div>
+                             </div>
+                            <span class="tag tag-gray text-xs">Ashram Stay</span>
+                        </div>
+                        <div class="my-4 flex justify-between items-end">
+                            <p class="text-sm text-gray-500">30 Rooms</p>
+                            <p class="text-xl font-bold text-brand-orange">₹600/night</p>
+                        </div>
+                        <div class="flex flex-wrap gap-2 text-xs">
+                           <span class="flex items-center gap-1 bg-green-100 text-green-800 px-2 py-1 rounded-full"><i data-lucide="wifi"></i> WiFi</span>
+                           <span class="flex items-center gap-1 bg-green-100 text-green-800 px-2 py-1 rounded-full"><i data-lucide="leaf"></i> Meditation Hall</span>
+                        </div>
+                         <div class="mt-4 space-y-2 text-sm">
+                            <p class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-gray-400"></i> Ramana Ashram</p>
+                            <p class="flex items-center gap-2"><i data-lucide="phone" class="w-4 h-4 text-gray-400"></i> +91 9876543223</p>
+                        </div>
+                    </div>
+                    <a href="#" class="block bg-brand-orange text-white text-center font-semibold py-3 hover:bg-orange-600 transition">Book Now</a>
+                </div>
+                <div class="card overflow-hidden">
+                    <div class="p-6">
+                         <div class="flex justify-between items-start">
+                             <div class="flex items-center gap-3">
+                                <i data-lucide="trees" class="w-6 h-6 text-brand-orange"></i>
+                                <div>
+                                    <h4 class="text-lg font-semibold">Mountain View Resort</h4>
+                                    <p class="flex items-center gap-1 text-sm">
+                                        <i data-lucide="star" class="w-4 h-4 rating-star fill-current"></i>
+                                        <span class="font-semibold">4.8</span>
+                                        <span class="text-gray-400">/5.0</span>
+                                    </p>
+                                </div>
+                             </div>
+                            <span class="tag tag-gray text-xs">Resort</span>
+                        </div>
+                        <div class="my-4 flex justify-between items-end">
+                            <p class="text-sm text-gray-500">40 Rooms</p>
+                            <p class="text-xl font-bold text-brand-orange">₹3,500/night</p>
+                        </div>
+                        <div class="flex flex-wrap gap-2 text-xs">
+                           <span class="flex items-center gap-1 bg-green-100 text-green-800 px-2 py-1 rounded-full"><i data-lucide="wifi"></i> WiFi</span>
+                           <span class="flex items-center gap-1 bg-green-100 text-green-800 px-2 py-1 rounded-full"><i data-lucide="parking-circle"></i> Parking</span>
+                           <span class="flex items-center gap-1 bg-green-100 text-green-800 px-2 py-1 rounded-full"><i data-lucide="croissant"></i> Restaurant</span>
+                           <span class="flex items-center gap-1 bg-green-100 text-green-800 px-2 py-1 rounded-full"><i data-lucide="person-standing"></i> Pool</span>
+                        </div>
+                         <div class="mt-4 space-y-2 text-sm">
+                            <p class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-gray-400"></i> Polur Road</p>
+                            <p class="flex items-center gap-2"><i data-lucide="phone" class="w-4 h-4 text-gray-400"></i> +91 9876543224</p>
+                        </div>
+                    </div>
+                    <a href="#" class="block bg-brand-orange text-white text-center font-semibold py-3 hover:bg-orange-600 transition">Book Now</a>
+                </div>
+                 <div class="card overflow-hidden">
+                    <div class="p-6">
+                         <div class="flex justify-between items-start">
+                             <div class="flex items-center gap-3">
+                                <i data-lucide="building" class="w-6 h-6 text-brand-orange"></i>
+                                <div>
+                                    <h4 class="text-lg font-semibold">Girivalam Inn</h4>
+                                    <p class="flex items-center gap-1 text-sm">
+                                        <i data-lucide="star" class="w-4 h-4 rating-star fill-current"></i>
+                                        <span class="font-semibold">4.2</span>
+                                        <span class="text-gray-400">/5.0</span>
+                                    </p>
+                                </div>
+                             </div>
+                            <span class="tag tag-gray text-xs">Lodge</span>
+                        </div>
+                        <div class="my-4 flex justify-between items-end">
+                            <p class="text-sm text-gray-500">15 Rooms</p>
+                            <p class="text-xl font-bold text-brand-orange">₹1,000/night</p>
+                        </div>
+                        <div class="flex flex-wrap gap-2 text-xs">
+                           <span class="flex items-center gap-1 bg-green-100 text-green-800 px-2 py-1 rounded-full"><i data-lucide="parking-circle"></i> Parking</span>
+                           <span class="flex items-center gap-1 bg-green-100 text-green-800 px-2 py-1 rounded-full"><i data-lucide="clock"></i> 24/7 Service</span>
+                        </div>
+                         <div class="mt-4 space-y-2 text-sm">
+                            <p class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-gray-400"></i> Girivalam Path</p>
+                            <p class="flex items-center gap-2"><i data-lucide="phone" class="w-4 h-4 text-gray-400"></i> +91 9876543225</p>
+                        </div>
+                    </div>
+                    <a href="#" class="block bg-brand-orange text-white text-center font-semibold py-3 hover:bg-orange-600 transition">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 Discover Tiruvannamalai. All rights reserved.</p>
+            <p class="text-sm text-gray-400 mt-2">Your guide to the sacred city.</p>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
