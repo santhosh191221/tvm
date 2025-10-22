@@ -199,80 +199,126 @@
     </div>
 
     <script>
-        function showForm(formName) {
-            // Hide all forms
-            document.querySelectorAll('.form-section').forEach(form => {
-                form.classList.remove('active');
-            });
-            // Deactivate all tabs
-            document.querySelectorAll('.tab-button').forEach(button => {
-                button.classList.remove('active');
-            });
+        function showForm(formType) {
+            // Hide all form sections
+            document.getElementById('service-form').classList.remove('active');
+            document.getElementById('land-form').classList.remove('active');
+            document.getElementById('property-form').classList.remove('active');
 
-            // Show the selected form and activate its tab
-            document.getElementById(formName + '-form').classList.add('active'); // Error here, fixed
-            document.querySelector(`button[onclick="showForm('${formName}')"]`).classList.add('active'); // Error here, fixed
+            // Deactivate all tab buttons
+            const tabButtons = document.querySelectorAll('.tab-button');
+            tabButtons.forEach(button => button.classList.remove('active'));
+
+            // Show the selected form
+            document.getElementById(formType + '-form').classList.add('active');
+
+            // Activate the clicked tab button
+            // We find the button that calls showForm with the correct formType
+            document.querySelector(`.tab-button[onclick="showForm('${formType}')"]`).classList.add('active');
         }
 
-        // --- Form Submission Logic ---
-        const scriptURL = 'YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL_HERE'; // IMPORTANT: Replace with your URL
+        // Handle the 'Other' category for the service form
+        document.getElementById('service-category').addEventListener('change', function() {
+            document.getElementById('other-category-container').classList.toggle('hidden', this.value !== 'Other');
+        });
+    </script>
+ <script>
+  // Replace this with the Google Apps Script URL you deployed.
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbwKpKqAld4nEFmWe13umxOXG4L6SuWa1NJRO62ivDX70DbaQZaPxSO7HcswcRFFvQij/exec';
 
-        const forms = [
-            document.getElementById('serviceListingForm'),
-            document.getElementById('landListingForm'),
-            document.getElementById('propertyListingForm'),
-        ];
+  // get forms
+  const forms = [
+    document.getElementById('serviceListingForm'),
+    document.getElementById('landListingForm'),
+    document.getElementById('propertyListingForm'),
+  ];
+  const submissionStatus = document.getElementById('submission-status');
 
-        const submissionStatus = document.getElementById('submission-status');
+  // Utility - convert a File to a base64 data URL (returns Promise)
+  function fileToDataUrl(file) {
+    return new Promise((resolve, reject) => {
+      if (!file) return resolve(null);
+      const reader = new FileReader();
+      reader.onload = () => resolve(reader.result); // data URL
+      reader.onerror = reject;
+      reader.readAsDataURL(file);
+    });
+  }
 
-        forms.forEach(form => {
-            if (form) {
-                form.addEventListener('submit', e => {
-                    e.preventDefault();
-                    const submitButton = form.querySelector('button[type="submit"]');
-                    const originalButtonText = submitButton.innerHTML;
-                    submitButton.disabled = true;
-                    submitButton.innerHTML = 'Submitting...';
-                    submissionStatus.classList.add('hidden');
+  forms.forEach(form => {
+    if (!form) return;
+    form.addEventListener('submit', async function(e) {
+      e.preventDefault();
 
-                    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-                        .then(response => response.json()) // Changed to handle JSON response from Apps Script
-                        .then(data => {
-                            console.log('Success!', response);
-                            form.reset();
-                            submissionStatus.querySelector('p').textContent = 'Thank you! Your listing has been submitted successfully.';
-                            submissionStatus.querySelector('p').className = 'font-semibold text-green-600';
-                            submissionStatus.classList.remove('hidden');
-                        })
-                        .catch(error => {
-                            console.error('Error!', error.message);
-                            submissionStatus.querySelector('p').textContent = 'Oops! Something went wrong. Please try again.';
-                            submissionStatus.querySelector('p').className = 'font-semibold text-red-600';
-                            submissionStatus.classList.remove('hidden');
-                        })
-                        .finally(() => {
-                            submitButton.disabled = false;
-                            submitButton.innerHTML = originalButtonText;
-                        });
-                });
-            }
+      const submitButton = form.querySelector('button[type="submit"]');
+      const originalButtonText = submitButton.innerHTML;
+      submitButton.disabled = true;
+      submitButton.innerHTML = 'Submitting...';
+      submissionStatus.classList.add('hidden');
+
+      try {
+        const formData = new FormData(form); // used to get text fields easily
+
+        // Find file input in form
+        const fileInput = form.querySelector('input[type="file"][name="Photo"]');
+        let dataUrl = null;
+        let fileName = null;
+        let fileType = null;
+
+        if (fileInput && fileInput.files && fileInput.files[0]) {
+          const file = fileInput.files[0];
+          dataUrl = await fileToDataUrl(file); // like "data:image/png;base64,......"
+          fileName = file.name;
+          fileType = file.type || 'application/octet-stream';
+        }
+
+        // Build payload object (plain object -> will be sent as application/x-www-form-urlencoded)
+        const payload = {};
+        for (const pair of formData.entries()) {
+          // pair[0] is name, pair[1] is value
+          payload[pair[0]] = pair[1];
+        }
+
+        if (dataUrl) {
+          payload['photoBase64'] = dataUrl;
+          payload['photoName'] = fileName;
+          payload['photoType'] = fileType;
+        }
+
+        // Send as application/x-www-form-urlencoded so Apps Script receives parameters easily
+        const urlEncoded = new URLSearchParams(payload).toString();
+
+        const resp = await fetch(scriptURL, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8' },
+          body: urlEncoded,
         });
 
-        // --- Logic for "Other" category textbox ---
-        const serviceCategorySelect = document.getElementById('service-category');
-        const otherCategoryContainer = document.getElementById('other-category-container');
-
-        if (serviceCategorySelect && otherCategoryContainer) {
-            serviceCategorySelect.addEventListener('change', function() {
-                if (this.value === 'Other') {
-                    otherCategoryContainer.classList.remove('hidden');
-                } else {
-                    otherCategoryContainer.classList.add('hidden');
-                }
-            });
+        // Parse JSON response
+        const json = await resp.json();
+        if (json.status && json.status === 'success') {
+          form.reset();
+          submissionStatus.querySelector('p').textContent = 'Thank you! Your listing has been submitted successfully.';
+          submissionStatus.querySelector('p').className = 'font-semibold text-green-600';
+        } else {
+          submissionStatus.querySelector('p').textContent = 'Server error: ' + (json.message || 'Unknown error');
+          submissionStatus.querySelector('p').className = 'font-semibold text-red-600';
         }
+        submissionStatus.classList.remove('hidden');
 
-    </script>
+      } catch (err) {
+        console.error('Submit error', err);
+        submissionStatus.querySelector('p').textContent = 'Oops! Something went wrong. Please try again.';
+        submissionStatus.querySelector('p').className = 'font-semibold text-red-600';
+        submissionStatus.classList.remove('hidden');
+      } finally {
+        submitButton.disabled = false;
+        submitButton.innerHTML = originalButtonText;
+      }
+    });
+  });
+</script>
+
 
 </body>
 </html>
