@@ -153,73 +153,53 @@
                 <h3 class="text-3xl md:text-4xl font-bold">Temple Events & Functions</h3>
                 <p class="mt-2 text-gray-600">Stay updated with sacred rituals, festivals, and special ceremonies at Arunachaleswar Temple.</p>
             </div>
-            <div class="card max-w-4xl mx-auto p-6 md:p-8">
-                <h4 class="text-2xl font-bold text-center text-brand-orange mb-6">திருவண்ணாமலை திருக்கார்த்திகை தீபத் திருவிழா 2025</h4>
-                <div class="space-y-4">
-                    <!-- Timetable Rows -->
-                    <div class="grid grid-cols-3 gap-4 items-center p-3 rounded-lg hover:bg-orange-50 transition">
-                        <div class="font-semibold text-gray-800"><i data-lucide="calendar-days" class="inline-block w-4 h-4 mr-2 text-brand-orange"></i>21.11.2025</div>
-                        <div class="col-span-2 text-gray-600">அருள்மிகு துர்க்கை அம்மன் உற்சவம்</div>
+            <div class="card max-w-4xl mx-auto p-6 md:p-8 relative">
+                <div class="absolute top-4 right-4 flex gap-2">
+                    <button id="lang-en-btn" class="text-xs font-semibold py-1 px-3 rounded-full border-2 border-brand-orange bg-brand-orange text-white">English</button>
+                    <button id="lang-ta-btn" class="text-xs font-semibold py-1 px-3 rounded-full border-2 border-gray-300 bg-gray-100 text-gray-500">தமிழ்</button>
+                </div>
+
+                <div id="timetable-en">
+                    <h4 class="text-2xl font-bold text-center text-brand-orange mb-6">Tiruvannamalai Karthigai Deepam Festival 2025</h4>
+                    <div class="space-y-4">
+                        <div class="grid grid-cols-3 gap-4 items-center p-3 rounded-lg hover:bg-orange-50 transition"><div class="font-semibold text-gray-800"><i data-lucide="calendar-days" class="inline-block w-4 h-4 mr-2 text-brand-orange"></i>21.11.2025</div><div class="col-span-2 text-gray-600">Sri Durga Amman Utsavam</div></div>
+                        <div class="grid grid-cols-3 gap-4 items-center p-3 rounded-lg hover:bg-orange-50 transition border-t border-gray-100"><div class="font-semibold text-gray-800"><i data-lucide="calendar-days" class="inline-block w-4 h-4 mr-2 text-brand-orange"></i>22.11.2025</div><div class="col-span-2 text-gray-600">Sri Pidari Amman Utsavam</div></div>
+                        <div class="grid grid-cols-3 gap-4 items-center p-3 rounded-lg hover:bg-orange-50 transition border-t border-gray-100"><div class="font-semibold text-gray-800"><i data-lucide="calendar-days" class="inline-block w-4 h-4 mr-2 text-brand-orange"></i>23.11.2025</div><div class="col-span-2 text-gray-600">Sri Vinayagar, Chandrasekar Utsavam</div></div>
+                        <div class="grid grid-cols-3 gap-4 items-center p-3 rounded-lg hover:bg-orange-50 transition border-t border-gray-100"><div class="font-semibold text-gray-800"><i data-lucide="flag" class="inline-block w-4 h-4 mr-2 text-brand-orange"></i>24.11.2025</div><div class="col-span-2 text-gray-600">Flag Hoisting - Silver Adhikara Nandi, Silver Swan Vehicle</div></div>
+                        <div class="grid grid-cols-3 gap-4 items-center p-3 rounded-lg hover:bg-orange-50 transition border-t border-gray-100"><div class="font-semibold text-gray-800"><i data-lucide="calendar-days" class="inline-block w-4 h-4 mr-2 text-brand-orange"></i>25.11.2025</div><div class="col-span-2 text-gray-600">Golden Surya Prabhai Vehicle, Silver Indra Vimanam</div></div>
+                        <div class="grid grid-cols-3 gap-4 items-center p-3 rounded-lg hover:bg-orange-50 transition border-t border-gray-100"><div class="font-semibold text-gray-800"><i data-lucide="calendar-days" class="inline-block w-4 h-4 mr-2 text-brand-orange"></i>26.11.2025</div><div class="col-span-2 text-gray-600">Simha (Lion) Vehicle, Silver Vehicle</div></div>
+                        <div class="grid grid-cols-3 gap-4 items-center p-3 rounded-lg hover:bg-orange-50 transition border-t border-gray-100"><div class="font-semibold text-gray-800"><i data-lucide="calendar-days" class="inline-block w-4 h-4 mr-2 text-brand-orange"></i>27.11.2025</div><div class="col-span-2 text-gray-600">Silver Kamadhenu Vehicle</div></div>
+                        <div class="grid grid-cols-3 gap-4 items-center p-3 rounded-lg hover:bg-orange-50 transition border-t border-gray-100"><div class="font-semibold text-gray-800"><i data-lucide="calendar-days" class="inline-block w-4 h-4 mr-2 text-brand-orange"></i>28.11.2025</div><div class="col-span-2 text-gray-600">Silver Rishaba (Bull) Vehicle</div></div>
+                        <div class="grid grid-cols-3 gap-4 items-center p-3 rounded-lg hover:bg-orange-50 transition border-t border-gray-100"><div class="font-semibold text-gray-800"><i data-lucide="calendar-days" class="inline-block w-4 h-4 mr-2 text-brand-orange"></i>29.11.2025</div><div class="col-span-2 text-gray-600">Silver Chariot</div></div>
+                        <div class="grid grid-cols-3 gap-4 items-center p-3 rounded-lg hover:bg-orange-50 transition border-t border-gray-100"><div class="font-semibold text-gray-800"><i data-lucide="calendar-days" class="inline-block w-4 h-4 mr-2 text-brand-orange"></i>30.11.2025</div><div class="col-span-2 text-gray-600">Maha Ratham (Great Chariot)</div></div>
+                        <div class="grid grid-cols-3 gap-4 items-center p-3 rounded-lg hover:bg-orange-50 transition border-t border-gray-100"><div class="font-semibold text-gray-800"><i data-lucide="calendar-days" class="inline-block w-4 h-4 mr-2 text-brand-orange"></i>01.12.2025</div><div class="col-span-2 text-gray-600">Pichandavar Utsavam, Horse Vehicle</div></div>
+                        <div class="grid grid-cols-3 gap-4 items-center p-3 rounded-lg hover:bg-orange-50 transition border-t border-gray-100"><div class="font-semibold text-gray-800"><i data-lucide="calendar-days" class="inline-block w-4 h-4 mr-2 text-brand-orange"></i>02.12.2025</div><div class="col-span-2 text-gray-600">Kailasa Vehicle, Kamadhenu Vehicle</div></div>
+                        <div class="grid grid-cols-3 gap-4 items-center p-4 rounded-lg bg-orange-100/50 border-t border-orange-200 my-4"><div class="font-bold text-orange-600"><i data-lucide="flame" class="inline-block w-5 h-5 mr-2"></i>03.12.2025</div><div class="col-span-2 text-orange-700 font-bold">Bharani Deepam, Maha Deepam</div></div>
+                        <div class="grid grid-cols-3 gap-4 items-center p-3 rounded-lg hover:bg-orange-50 transition border-t border-gray-100"><div class="font-semibold text-gray-800"><i data-lucide="calendar-days" class="inline-block w-4 h-4 mr-2 text-brand-orange"></i>04.12.2025</div><div class="col-span-2 text-gray-600">Theppal Utsavam - Chandrasekar</div></div>
+                        <div class="grid grid-cols-3 gap-4 items-center p-3 rounded-lg hover:bg-orange-50 transition border-t border-gray-100"><div class="font-semibold text-gray-800"><i data-lucide="calendar-days" class="inline-block w-4 h-4 mr-2 text-brand-orange"></i>05.12.2025</div><div class="col-span-2 text-gray-600">Theppal Utsavam - Annamalaiyar</div></div>
+                        <div class="grid grid-cols-3 gap-4 items-center p-3 rounded-lg hover:bg-orange-50 transition border-t border-gray-100"><div class="font-semibold text-gray-800"><i data-lucide="calendar-days" class="inline-block w-4 h-4 mr-2 text-brand-orange"></i>06.12.2025</div><div class="col-span-2 text-gray-600">Theppal Utsavam - Subramaniyar</div></div>
                     </div>
-                    <div class="grid grid-cols-3 gap-4 items-center p-3 rounded-lg hover:bg-orange-50 transition border-t border-gray-100">
-                        <div class="font-semibold text-gray-800"><i data-lucide="calendar-days" class="inline-block w-4 h-4 mr-2 text-brand-orange"></i>22.11.2025</div>
-                        <div class="col-span-2 text-gray-600">அருள்மிகு பிடாரி அம்மன் உற்சவம்</div>
-                    </div>
-                    <div class="grid grid-cols-3 gap-4 items-center p-3 rounded-lg hover:bg-orange-50 transition border-t border-gray-100">
-                        <div class="font-semibold text-gray-800"><i data-lucide="calendar-days" class="inline-block w-4 h-4 mr-2 text-brand-orange"></i>23.11.2025</div>
-                        <div class="col-span-2 text-gray-600">அருள்மிகு விநாயகர், சந்திரசேகர் உற்சவம்</div>
-                    </div>
-                    <div class="grid grid-cols-3 gap-4 items-center p-3 rounded-lg hover:bg-orange-50 transition border-t border-gray-100">
-                        <div class="font-semibold text-gray-800"><i data-lucide="flag" class="inline-block w-4 h-4 mr-2 text-brand-orange"></i>24.11.2025</div>
-                        <div class="col-span-2 text-gray-600">கொடியேற்றம் - வெள்ளி வாகனம், சிம்ம வாகனம்</div>
-                    </div>
-                    <div class="grid grid-cols-3 gap-4 items-center p-3 rounded-lg hover:bg-orange-50 transition border-t border-gray-100">
-                        <div class="font-semibold text-gray-800"><i data-lucide="calendar-days" class="inline-block w-4 h-4 mr-2 text-brand-orange"></i>25.11.2025</div>
-                        <div class="col-span-2 text-gray-600">தங்க சூரியபிரபை வாகனம், வெள்ளி இந்திர விமானங்கள்</div>
-                    </div>
-                    <div class="grid grid-cols-3 gap-4 items-center p-3 rounded-lg hover:bg-orange-50 transition border-t border-gray-100">
-                        <div class="font-semibold text-gray-800"><i data-lucide="calendar-days" class="inline-block w-4 h-4 mr-2 text-brand-orange"></i>26.11.2025</div>
-                        <div class="col-span-2 text-gray-600">சிம்ம வாகனம், வெள்ளி வாகனம்</div>
-                    </div>
-                    <div class="grid grid-cols-3 gap-4 items-center p-3 rounded-lg hover:bg-orange-50 transition border-t border-gray-100">
-                        <div class="font-semibold text-gray-800"><i data-lucide="calendar-days" class="inline-block w-4 h-4 mr-2 text-brand-orange"></i>27.11.2025</div>
-                        <div class="col-span-2 text-gray-600">வெள்ளி காமதேனு வாகனம்</div>
-                    </div>
-                    <div class="grid grid-cols-3 gap-4 items-center p-3 rounded-lg hover:bg-orange-50 transition border-t border-gray-100">
-                        <div class="font-semibold text-gray-800"><i data-lucide="calendar-days" class="inline-block w-4 h-4 mr-2 text-brand-orange"></i>28.11.2025</div>
-                        <div class="col-span-2 text-gray-600">வெள்ளி ரிஷப வாகனம்</div>
-                    </div>
-                    <div class="grid grid-cols-3 gap-4 items-center p-3 rounded-lg hover:bg-orange-50 transition border-t border-gray-100">
-                        <div class="font-semibold text-gray-800"><i data-lucide="calendar-days" class="inline-block w-4 h-4 mr-2 text-brand-orange"></i>29.11.2025</div>
-                        <div class="col-span-2 text-gray-600">வெள்ளி ரதம்</div>
-                    </div>
-                    <div class="grid grid-cols-3 gap-4 items-center p-3 rounded-lg hover:bg-orange-50 transition border-t border-gray-100">
-                        <div class="font-semibold text-gray-800"><i data-lucide="calendar-days" class="inline-block w-4 h-4 mr-2 text-brand-orange"></i>30.11.2025</div>
-                        <div class="col-span-2 text-gray-600">மகா ரதம்</div>
-                    </div>
-                    <div class="grid grid-cols-3 gap-4 items-center p-3 rounded-lg hover:bg-orange-50 transition border-t border-gray-100">
-                        <div class="font-semibold text-gray-800"><i data-lucide="calendar-days" class="inline-block w-4 h-4 mr-2 text-brand-orange"></i>01.12.2025</div>
-                        <div class="col-span-2 text-gray-600">பிச்சாண்டவர் உற்சவம், குதிரை வாகனம்</div>
-                    </div>
-                    <div class="grid grid-cols-3 gap-4 items-center p-3 rounded-lg hover:bg-orange-50 transition border-t border-gray-100">
-                        <div class="font-semibold text-gray-800"><i data-lucide="calendar-days" class="inline-block w-4 h-4 mr-2 text-brand-orange"></i>02.12.2025</div>
-                        <div class="col-span-2 text-gray-600">கைலாச வாகனம், காமதேனு வாகனம்</div>
-                    </div>
-                    <div class="grid grid-cols-3 gap-4 items-center p-4 rounded-lg bg-orange-100/50 border-t border-orange-200 my-4">
-                        <div class="font-bold text-orange-600"><i data-lucide="flame" class="inline-block w-5 h-5 mr-2"></i>03.12.2025</div>
-                        <div class="col-span-2 text-orange-700 font-bold">பரணி தீபம், மகா தீபம்</div>
-                    </div>
-                    <div class="grid grid-cols-3 gap-4 items-center p-3 rounded-lg hover:bg-orange-50 transition border-t border-gray-100">
-                        <div class="font-semibold text-gray-800"><i data-lucide="calendar-days" class="inline-block w-4 h-4 mr-2 text-brand-orange"></i>04.12.2025</div>
-                        <div class="col-span-2 text-gray-600">தெப்பல் உற்சவம் - சந்திரசேகர்</div>
-                    </div>
-                    <div class="grid grid-cols-3 gap-4 items-center p-3 rounded-lg hover:bg-orange-50 transition border-t border-gray-100">
-                        <div class="font-semibold text-gray-800"><i data-lucide="calendar-days" class="inline-block w-4 h-4 mr-2 text-brand-orange"></i>05.12.2025</div>
-                        <div class="col-span-2 text-gray-600">தெப்பல் உற்சவம் - அண்ணாமலையார்</div>
-                    </div>
-                    <div class="grid grid-cols-3 gap-4 items-center p-3 rounded-lg hover:bg-orange-50 transition border-t border-gray-100">
-                        <div class="font-semibold text-gray-800"><i data-lucide="calendar-days" class="inline-block w-4 h-4 mr-2 text-brand-orange"></i>06.12.2025</div>
-                        <div class="col-span-2 text-gray-600">தெப்பல் உற்சவம் - சுப்பிரமணியர்</div>
+                </div>
+
+                <div id="timetable-ta" class="hidden">
+                    <h4 class="text-2xl font-bold text-center text-brand-orange mb-6">திருவண்ணாமலை திருக்கார்த்திகை தீபத் திருவிழா 2025</h4>
+                    <div class="space-y-4">
+                        <div class="grid grid-cols-3 gap-4 items-center p-3 rounded-lg hover:bg-orange-50 transition"><div class="font-semibold text-gray-800"><i data-lucide="calendar-days" class="inline-block w-4 h-4 mr-2 text-brand-orange"></i>21.11.2025</div><div class="col-span-2 text-gray-600">அருள்மிகு துர்க்கை அம்மன் உற்சவம்</div></div>
+                        <div class="grid grid-cols-3 gap-4 items-center p-3 rounded-lg hover:bg-orange-50 transition border-t border-gray-100"><div class="font-semibold text-gray-800"><i data-lucide="calendar-days" class="inline-block w-4 h-4 mr-2 text-brand-orange"></i>22.11.2025</div><div class="col-span-2 text-gray-600">அருள்மிகு பிடாரி அம்மன் உற்சவம்</div></div>
+                        <div class="grid grid-cols-3 gap-4 items-center p-3 rounded-lg hover:bg-orange-50 transition border-t border-gray-100"><div class="font-semibold text-gray-800"><i data-lucide="calendar-days" class="inline-block w-4 h-4 mr-2 text-brand-orange"></i>23.11.2025</div><div class="col-span-2 text-gray-600">அருள்மிகு விநாயகர், சந்திரசேகர் உற்சவம்</div></div>
+                        <div class="grid grid-cols-3 gap-4 items-center p-3 rounded-lg hover:bg-orange-50 transition border-t border-gray-100"><div class="font-semibold text-gray-800"><i data-lucide="flag" class="inline-block w-4 h-4 mr-2 text-brand-orange"></i>24.11.2025</div><div class="col-span-2 text-gray-600">கொடியேற்றம் - வெள்ளி வாகனம், சிம்ம வாகனம்</div></div>
+                        <div class="grid grid-cols-3 gap-4 items-center p-3 rounded-lg hover:bg-orange-50 transition border-t border-gray-100"><div class="font-semibold text-gray-800"><i data-lucide="calendar-days" class="inline-block w-4 h-4 mr-2 text-brand-orange"></i>25.11.2025</div><div class="col-span-2 text-gray-600">தங்க சூரியபிரபை வாகனம், வெள்ளி இந்திர விமானங்கள்</div></div>
+                        <div class="grid grid-cols-3 gap-4 items-center p-3 rounded-lg hover:bg-orange-50 transition border-t border-gray-100"><div class="font-semibold text-gray-800"><i data-lucide="calendar-days" class="inline-block w-4 h-4 mr-2 text-brand-orange"></i>26.11.2025</div><div class="col-span-2 text-gray-600">சிம்ம வாகனம், வெள்ளி வாகனம்</div></div>
+                        <div class="grid grid-cols-3 gap-4 items-center p-3 rounded-lg hover:bg-orange-50 transition border-t border-gray-100"><div class="font-semibold text-gray-800"><i data-lucide="calendar-days" class="inline-block w-4 h-4 mr-2 text-brand-orange"></i>27.11.2025</div><div class="col-span-2 text-gray-600">வெள்ளி காமதேனு வாகனம்</div></div>
+                        <div class="grid grid-cols-3 gap-4 items-center p-3 rounded-lg hover:bg-orange-50 transition border-t border-gray-100"><div class="font-semibold text-gray-800"><i data-lucide="calendar-days" class="inline-block w-4 h-4 mr-2 text-brand-orange"></i>28.11.2025</div><div class="col-span-2 text-gray-600">வெள்ளி ரிஷப வாகனம்</div></div>
+                        <div class="grid grid-cols-3 gap-4 items-center p-3 rounded-lg hover:bg-orange-50 transition border-t border-gray-100"><div class="font-semibold text-gray-800"><i data-lucide="calendar-days" class="inline-block w-4 h-4 mr-2 text-brand-orange"></i>29.11.2025</div><div class="col-span-2 text-gray-600">வெள்ளி ரதம்</div></div>
+                        <div class="grid grid-cols-3 gap-4 items-center p-3 rounded-lg hover:bg-orange-50 transition border-t border-gray-100"><div class="font-semibold text-gray-800"><i data-lucide="calendar-days" class="inline-block w-4 h-4 mr-2 text-brand-orange"></i>30.11.2025</div><div class="col-span-2 text-gray-600">மகா ரதம்</div></div>
+                        <div class="grid grid-cols-3 gap-4 items-center p-3 rounded-lg hover:bg-orange-50 transition border-t border-gray-100"><div class="font-semibold text-gray-800"><i data-lucide="calendar-days" class="inline-block w-4 h-4 mr-2 text-brand-orange"></i>01.12.2025</div><div class="col-span-2 text-gray-600">பிச்சாண்டவர் உற்சவம், குதிரை வாகனம்</div></div>
+                        <div class="grid grid-cols-3 gap-4 items-center p-3 rounded-lg hover:bg-orange-50 transition border-t border-gray-100"><div class="font-semibold text-gray-800"><i data-lucide="calendar-days" class="inline-block w-4 h-4 mr-2 text-brand-orange"></i>02.12.2025</div><div class="col-span-2 text-gray-600">கைலாச வாகனம், காமதேனு வாகனம்</div></div>
+                        <div class="grid grid-cols-3 gap-4 items-center p-4 rounded-lg bg-orange-100/50 border-t border-orange-200 my-4"><div class="font-bold text-orange-600"><i data-lucide="flame" class="inline-block w-5 h-5 mr-2"></i>03.12.2025</div><div class="col-span-2 text-orange-700 font-bold">பரணி தீபம், மகா தீபம்</div></div>
+                        <div class="grid grid-cols-3 gap-4 items-center p-3 rounded-lg hover:bg-orange-50 transition border-t border-gray-100"><div class="font-semibold text-gray-800"><i data-lucide="calendar-days" class="inline-block w-4 h-4 mr-2 text-brand-orange"></i>04.12.2025</div><div class="col-span-2 text-gray-600">தெப்பல் உற்சவம் - சந்திரசேகர்</div></div>
+                        <div class="grid grid-cols-3 gap-4 items-center p-3 rounded-lg hover:bg-orange-50 transition border-t border-gray-100"><div class="font-semibold text-gray-800"><i data-lucide="calendar-days" class="inline-block w-4 h-4 mr-2 text-brand-orange"></i>05.12.2025</div><div class="col-span-2 text-gray-600">தெப்பல் உற்சவம் - அண்ணாமலையார்</div></div>
+                        <div class="grid grid-cols-3 gap-4 items-center p-3 rounded-lg hover:bg-orange-50 transition border-t border-gray-100"><div class="font-semibold text-gray-800"><i data-lucide="calendar-days" class="inline-block w-4 h-4 mr-2 text-brand-orange"></i>06.12.2025</div><div class="col-span-2 text-gray-600">தெப்பல் உற்சவம் - சுப்பிரமணியர்</div></div>
                     </div>
                 </div>
             </div>
@@ -308,6 +288,18 @@
                         <p class="flex items-center gap-2"><i data-lucide="calendar" class="w-4 h-4 text-gray-400"></i> Valid until: Oct 31, 2025</p>
                     </div>
                     <a href="#" class="block text-center w-full mt-6 bg-brand-orange text-white text-sm font-semibold py-3 rounded-lg hover:bg-orange-600 transition">Locate Shop</a>
+                </div>
+                <div class="card p-6">
+                    <div class="flex justify-between items-center">
+                        <h4 class="text-lg font-semibold">Unique mens wear</h4>
+                        <span class="tag tag-blue text-xs">Men's Fashion</span>
+                    </div>
+                    <p class="text-sm text-gray-500 mt-1">The latest trends in men's fashion.</p>
+                    <div class="mt-4 space-y-2 text-sm">
+                        <p class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-gray-400"></i> Tiruvanamalai</p>
+                        <p class="flex items-center gap-2"><i data-lucide="phone" class="w-4 h-4 text-gray-400"></i> 9597958453</p>
+                    </div>
+                    <a href="tel:9597958453" class="block text-center w-full mt-6 bg-brand-orange text-white text-sm font-semibold py-3 rounded-lg hover:bg-orange-600 transition">Contact</a>
                 </div>
             </div>
         </div>
@@ -842,6 +834,44 @@
         </div>
     </footer>
 
+    <!-- Welcome Popup -->
+    <div id="welcome-popup" class="fixed inset-0 bg-black bg-opacity-60 backdrop-blur-sm z-[100] flex items-center justify-center p-4 transition-opacity duration-300">
+        <div class="bg-white rounded-2xl shadow-xl p-6 md:p-8 max-w-2xl w-full transform transition-all scale-95 opacity-0" id="welcome-popup-content">
+            <div class="flex justify-between items-center mb-4">
+                <h3 class="text-2xl font-bold text-brand-orange">Karthigai Deepam 2025</h3>
+                <button id="close-welcome-popup" class="text-gray-400 hover:text-gray-800 transition-colors">
+                    <i data-lucide="x" class="w-7 h-7"></i>
+                </button>
+            </div>
+            <div class="space-y-3 text-gray-700 max-h-[60vh] overflow-y-auto pr-2">
+                <div class="grid grid-cols-3 gap-4 items-center p-2 rounded-lg"><div class="font-semibold text-gray-800 text-sm"><i data-lucide="calendar-days" class="inline-block w-4 h-4 mr-1 text-brand-orange"></i>21.11.2025</div><div class="col-span-2 text-gray-600 text-sm">Sri Durga Amman Utsavam</div></div>
+                <div class="grid grid-cols-3 gap-4 items-center p-2 rounded-lg border-t border-gray-100"><div class="font-semibold text-gray-800 text-sm"><i data-lucide="calendar-days" class="inline-block w-4 h-4 mr-1 text-brand-orange"></i>22.11.2025</div><div class="col-span-2 text-gray-600 text-sm">Sri Pidari Amman Utsavam</div></div>
+                <div class="grid grid-cols-3 gap-4 items-center p-2 rounded-lg border-t border-gray-100"><div class="font-semibold text-gray-800 text-sm"><i data-lucide="calendar-days" class="inline-block w-4 h-4 mr-1 text-brand-orange"></i>23.11.2025</div><div class="col-span-2 text-gray-600 text-sm">Sri Vinayagar, Chandrasekar Utsavam</div></div>
+                <div class="grid grid-cols-3 gap-4 items-center p-2 rounded-lg border-t border-gray-100"><div class="font-semibold text-gray-800 text-sm"><i data-lucide="flag" class="inline-block w-4 h-4 mr-1 text-brand-orange"></i>24.11.2025</div><div class="col-span-2 text-gray-600 text-sm">Flag Hoisting - Silver Adhikara Nandi, Silver Swan Vehicle</div></div>
+                <div class="grid grid-cols-3 gap-4 items-center p-2 rounded-lg border-t border-gray-100"><div class="font-semibold text-gray-800 text-sm"><i data-lucide="calendar-days" class="inline-block w-4 h-4 mr-1 text-brand-orange"></i>25.11.2025</div><div class="col-span-2 text-gray-600 text-sm">Golden Surya Prabhai Vehicle, Silver Indra Vimanam</div></div>
+                <div class="grid grid-cols-3 gap-4 items-center p-2 rounded-lg border-t border-gray-100"><div class="font-semibold text-gray-800 text-sm"><i data-lucide="calendar-days" class="inline-block w-4 h-4 mr-1 text-brand-orange"></i>26.11.2025</div><div class="col-span-2 text-gray-600 text-sm">Simha (Lion) Vehicle, Silver Vehicle</div></div>
+                <div class="grid grid-cols-3 gap-4 items-center p-2 rounded-lg border-t border-gray-100"><div class="font-semibold text-gray-800 text-sm"><i data-lucide="calendar-days" class="inline-block w-4 h-4 mr-1 text-brand-orange"></i>27.11.2025</div><div class="col-span-2 text-gray-600 text-sm">Silver Kamadhenu Vehicle</div></div>
+                <div class="grid grid-cols-3 gap-4 items-center p-2 rounded-lg border-t border-gray-100"><div class="font-semibold text-gray-800 text-sm"><i data-lucide="calendar-days" class="inline-block w-4 h-4 mr-1 text-brand-orange"></i>28.11.2025</div><div class="col-span-2 text-gray-600 text-sm">Silver Rishaba (Bull) Vehicle</div></div>
+                <div class="grid grid-cols-3 gap-4 items-center p-2 rounded-lg border-t border-gray-100"><div class="font-semibold text-gray-800 text-sm"><i data-lucide="calendar-days" class="inline-block w-4 h-4 mr-1 text-brand-orange"></i>29.11.2025</div><div class="col-span-2 text-gray-600 text-sm">Silver Chariot</div></div>
+                <div class="grid grid-cols-3 gap-4 items-center p-2 rounded-lg border-t border-gray-100"><div class="font-semibold text-gray-800 text-sm"><i data-lucide="calendar-days" class="inline-block w-4 h-4 mr-1 text-brand-orange"></i>30.11.2025</div><div class="col-span-2 text-gray-600 text-sm">Maha Ratham (Great Chariot)</div></div>
+                <div class="grid grid-cols-3 gap-4 items-center p-2 rounded-lg border-t border-gray-100"><div class="font-semibold text-gray-800 text-sm"><i data-lucide="calendar-days" class="inline-block w-4 h-4 mr-1 text-brand-orange"></i>01.12.2025</div><div class="col-span-2 text-gray-600 text-sm">Pichandavar Utsavam, Horse Vehicle</div></div>
+                <div class="grid grid-cols-3 gap-4 items-center p-2 rounded-lg border-t border-gray-100"><div class="font-semibold text-gray-800 text-sm"><i data-lucide="calendar-days" class="inline-block w-4 h-4 mr-1 text-brand-orange"></i>02.12.2025</div><div class="col-span-2 text-gray-600 text-sm">Kailasa Vehicle, Kamadhenu Vehicle</div></div>
+                <div class="grid grid-cols-3 gap-4 items-center p-3 rounded-lg bg-orange-100/50 border-t border-orange-200 my-2"><div class="font-bold text-orange-600 text-sm"><i data-lucide="flame" class="inline-block w-4 h-4 mr-1"></i>03.12.2025</div><div class="col-span-2 text-orange-700 font-bold text-sm">Bharani Deepam, Maha Deepam</div></div>
+                <div class="grid grid-cols-3 gap-4 items-center p-2 rounded-lg border-t border-gray-100"><div class="font-semibold text-gray-800 text-sm"><i data-lucide="calendar-days" class="inline-block w-4 h-4 mr-1 text-brand-orange"></i>04.12.2025</div><div class="col-span-2 text-gray-600 text-sm">Theppal Utsavam - Chandrasekar</div></div>
+                <div class="grid grid-cols-3 gap-4 items-center p-2 rounded-lg border-t border-gray-100"><div class="font-semibold text-gray-800 text-sm"><i data-lucide="calendar-days" class="inline-block w-4 h-4 mr-1 text-brand-orange"></i>05.12.2025</div><div class="col-span-2 text-gray-600 text-sm">Theppal Utsavam - Annamalaiyar</div></div>
+                <div class="grid grid-cols-3 gap-4 items-center p-2 rounded-lg border-t border-gray-100"><div class="font-semibold text-gray-800 text-sm"><i data-lucide="calendar-days" class="inline-block w-4 h-4 mr-1 text-brand-orange"></i>06.12.2025</div><div class="col-span-2 text-gray-600 text-sm">Theppal Utsavam - Subramaniyar</div></div>
+            </div>
+            <div class="mt-6 text-right">
+                <button id="dismiss-welcome-popup" class="bg-brand-orange text-white font-semibold py-2 px-6 rounded-lg hover:bg-orange-600 transition">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating Action Button -->
+    <button id="open-welcome-popup-fab" class="fixed bottom-6 right-6 bg-brand-orange text-white p-4 rounded-full shadow-lg hover:bg-orange-600 transition hidden z-50">
+        <i data-lucide="calendar-days" class="w-6 h-6"></i>
+    </button>
+
     <!-- Marketing Services Modal -->
     <div id="marketing-modal" class="fixed inset-0 bg-black bg-opacity-60 backdrop-blur-sm z-[100] hidden items-center justify-center p-4">
         <div class="bg-white rounded-2xl shadow-xl p-8 max-w-md w-full transform transition-all scale-95 opacity-0" id="marketing-modal-content">
@@ -977,6 +1007,67 @@
                 stayOverlay.style.opacity = '0';
             });
         }
+
+        // --- Timetable Language Switcher ---
+        const langEnBtn = document.getElementById('lang-en-btn');
+        const langTaBtn = document.getElementById('lang-ta-btn');
+        const timetableEn = document.getElementById('timetable-en');
+        const timetableTa = document.getElementById('timetable-ta');
+
+        if (langEnBtn && langTaBtn && timetableEn && timetableTa) {
+            langEnBtn.addEventListener('click', () => {
+                timetableEn.classList.remove('hidden');
+                timetableTa.classList.add('hidden');
+                langEnBtn.classList.add('bg-brand-orange', 'text-white');
+                langEnBtn.classList.remove('bg-gray-100', 'text-gray-500', 'border-gray-300');
+                langTaBtn.classList.add('bg-gray-100', 'text-gray-500', 'border-gray-300');
+                langTaBtn.classList.remove('bg-brand-orange', 'text-white');
+            });
+
+            langTaBtn.addEventListener('click', () => {
+                timetableTa.classList.remove('hidden');
+                timetableEn.classList.add('hidden');
+                langTaBtn.classList.add('bg-brand-orange', 'text-white');
+                langTaBtn.classList.remove('bg-gray-100', 'text-gray-500', 'border-gray-300');
+                langEnBtn.classList.add('bg-gray-100', 'text-gray-500', 'border-gray-300');
+                langEnBtn.classList.remove('bg-brand-orange', 'text-white');
+            });
+        }
+
+        // --- Welcome Popup Logic ---
+        const welcomePopup = document.getElementById('welcome-popup');
+        const welcomePopupContent = document.getElementById('welcome-popup-content');
+        const closeWelcomePopupBtn = document.getElementById('close-welcome-popup');
+        const dismissWelcomePopupBtn = document.getElementById('dismiss-welcome-popup');
+        const openWelcomePopupFab = document.getElementById('open-welcome-popup-fab');
+
+        const closeWelcomePopup = () => {
+            welcomePopupContent.classList.add('scale-95', 'opacity-0');
+            welcomePopup.classList.add('opacity-0');
+            setTimeout(() => {
+                welcomePopup.classList.add('hidden');
+                openWelcomePopupFab.classList.remove('hidden');
+            }, 300);
+        };
+
+        const openWelcomePopup = () => {
+            welcomePopup.classList.remove('hidden');
+            setTimeout(() => {
+                welcomePopup.classList.remove('opacity-0');
+                welcomePopupContent.classList.remove('scale-95', 'opacity-0');
+            }, 10);
+            openWelcomePopupFab.classList.add('hidden');
+        }
+
+        // Show popup on load
+        window.addEventListener('load', () => {
+            setTimeout(openWelcomePopup, 1000); // Delay 1s before showing
+        });
+
+        closeWelcomePopupBtn.addEventListener('click', closeWelcomePopup);
+        dismissWelcomePopupBtn.addEventListener('click', closeWelcomePopup);
+        openWelcomePopupFab.addEventListener('click', openWelcomePopup);
+
     </script>
     <script src="dynamic-updates.js"></script>
 </body>
