@@ -18,7 +18,7 @@
         .hero-section {
             background-image: 
                 linear-gradient(rgba(255, 255, 255, 0.15), rgba(253, 250, 246, 0.95)),
-                url("tvm.JPG");
+                url("tvm.jpeg");
             background-size: cover;
             background-position: center center;
             background-attachment: fixed;
@@ -390,12 +390,6 @@
                     <div class="mt-4 pt-4 border-t border-gray-100 flex justify-between items-center"><p class="flex items-center gap-1"><i data-lucide="star" class="w-4 h-4 rating-star fill-current"></i><span class="font-semibold">4.5</span><span class="text-sm text-gray-400">/5.0</span></p><a href="tel:9360505675" class="bg-brand-orange text-white text-sm font-semibold px-4 py-2 rounded-lg hover:bg-orange-600 transition">Contact</a></div>
                 </div>
                 <div class="card p-6">
-                    <div class="flex justify-between items-start"><div class="flex items-center gap-3"><i data-lucide="spray-can" class="w-6 h-6 text-brand-orange"></i><h4 class="text-lg font-semibold">Good time service </h4></div><span class="tag tag-gray text-xs">Cleaning work </span></div>
-                    <p class="mt-2 text-sm text-gray-500"></p>
-                    <div class="mt-4 space-y-2 text-sm"><p class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-gray-400"></i> Thiruvannamalai</p><p class="flex items-center gap-2"><i data-lucide="phone" class="w-4 h-4 text-gray-400"></i> 8925818294</p></div>
-                    <div class="mt-4 pt-4 border-t border-gray-100 flex justify-between items-center"><p class="flex items-center gap-1"><i data-lucide="star" class="w-4 h-4 rating-star fill-current"></i><span class="font-semibold">4.5</span><span class="text-sm text-gray-400">/5.0</span></p><a href="tel:8925818294" class="bg-brand-orange text-white text-sm font-semibold px-4 py-2 rounded-lg hover:bg-orange-600 transition">Contact</a></div>
-                </div>
-                <div class="card p-6">
                     <div class="flex justify-between items-start"><div class="flex items-center gap-3"><i data-lucide="gift" class="w-6 h-6 text-brand-orange"></i><h4 class="text-lg font-semibold">The Magic Moments </h4></div><span class="tag tag-gray text-xs">Surprise Events</span></div>
                     <p class="mt-2 text-sm text-gray-500">"✨Celebrate ur soul at Private Theatre🎬 💆‍♀️Relax ur soul wit Fish Pedicure🐟 🥗Savor Fresh Flavors at Veg Café🌱 🎮Step into Fun VR Games🕹️ 1stop destination for fun, relaxation and to create lifetime memories🎉"</p>
                     <div class="mt-4 space-y-2 text-sm"><p class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-gray-400"></i> RMB Complex, Thandrampattu Rd, opposite to Old GH, Kamarajarsilai, Ganesapuram, Tiruvannamalai, Tamil Nadu 606 - 601.</p><p class="flex items-center gap-2"><i data-lucide="phone" class="w-4 h-4 text-gray-400"></i> 9884838129</p></div>
@@ -433,6 +427,71 @@
                 </div>
             </div>
         </div>
+    </section>
+
+       <div id="rentals-modal" class="fixed inset-0 bg-black bg-opacity-60 backdrop-blur-sm z-[100] hidden items-center justify-center p-4">
+        <div class="bg-white rounded-2xl shadow-xl p-6 md:p-8 max-w-2xl w-full transform transition-all scale-95 opacity-0" id="rentals-modal-content">
+            <div class="flex justify-between items-center mb-6">
+                <h3 class="text-2xl font-bold text-gray-800">All Vehicle Rentals</h3>
+                <button id="close-rentals-modal" class="text-gray-400 hover:text-gray-800 transition-colors">
+                    <i data-lucide="x" class="w-7 h-7"></i>
+                </button>
+            </div>
+            <div class="space-y-4 max-h-[60vh] overflow-y-auto pr-2">
+                <!-- Rental Card 1 -->
+                <div class="card p-4">
+                    <div class="flex justify-between items-start"><div class="flex items-center gap-3"><i data-lucide="car" class="w-6 h-6 text-brand-orange"></i><h4 class="text-lg font-semibold">LIMRA TRAVELS</h4></div><span class="tag tag-gray text-xs">Vehicle Rental</span></div>
+                    <p class="mt-2 text-sm text-gray-600">"Limra Travels Tiruvannamalai is your trusted partner for seamless travel experiences in the region. As a leading taxi service in Tiruvannamalai, we offer prompt & reliable transportation for all your needs, whether it's local sightseeing or outstation trips. Our fleet includes well-maintained vehicles like sedans, SUVs, and tempo travellers in Tiruvannamalai, perfect for group travels & family outings. We pride ourselves on being one of the most sought-after travels in Tiruvannamalai, providing professional drivers, affordable pricing, and exceptional customer service. Searching for travels near me in Tiruvannamalai? Look no further! Limra Travels is here to make your journeys safe & comfortable. We are best Travels in Tiruvannamalai"</p>
+                    <div class="mt-4 space-y-2 text-sm"><p class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-gray-400"></i> Tiruvannamalai</p><p class="flex items-center gap-2"><i data-lucide="phone" class="w-4 h-4 text-gray-400"></i> 9655898212</p></div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 flex justify-end items-center"><a href="tel:9655898212" class="bg-brand-orange text-white text-sm font-semibold px-4 py-2 rounded-lg hover:bg-orange-600 transition">Contact</a></div>
+                </div>
+                <!-- Rental Card 2 -->
+                <div class="card p-4">
+                    <div class="flex justify-between items-start"><div class="flex items-center gap-3"><i data-lucide="bus" class="w-6 h-6 text-brand-orange"></i><h4 class="text-lg font-semibold">South tourism</h4></div><span class="tag tag-gray text-xs">Vehicle Rental</span></div>
+                    <p class="mt-2 text-sm text-gray-600">We are providing service sedan SUV tempo Traveller 12 seater, 18 seater, 21 seater, AC &non available</p>
+                    <div class="mt-4 space-y-2 text-sm"><p class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-gray-400"></i> Thiruvanamalai</p><p class="flex items-center gap-2"><i data-lucide="phone" class="w-4 h-4 text-gray-400"></i> 8015111046</p></div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 flex justify-end items-center"><a href="tel:8015111046" class="bg-brand-orange text-white text-sm font-semibold px-4 py-2 rounded-lg hover:bg-orange-600 transition">Contact</a></div>
+                </div>
+            </div>
+            <div class="mt-6 text-right">
+                <button id="dismiss-rentals-modal" class="bg-gray-200 text-gray-700 font-semibold py-2 px-6 rounded-lg hover:bg-gray-300 transition">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cleaning Services Section -->
+    <section id="cleaning" class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h3 class="text-3xl md:text-4xl font-bold">Cleaning Services</h3>
+                <p class="mt-2 text-gray-600">Professional cleaning for homes, gardens, and more.</p>
+            </div>
+            <div class="grid grid-cols-1 gap-8 justify-items-center">
+                <div class="card p-6">
+                    <div class="flex justify-between items-start">
+                        <div class="flex items-center gap-3"><i data-lucide="sparkles" class="w-8 h-8 text-brand-orange"></i><h4 class="text-2xl font-bold">Good Time Service</h4></div>
+                        <span class="tag tag-gray text-xs">Cleaning Work</span>
+                    </div>
+                    <p class="mt-4 text-gray-600">We offer a wide range of professional cleaning services for your home and business. Our services include:</p>
+                    <!-- <ul class="mt-4 space-y-2 text-gray-700 list-disc list-inside">
+                        <li>Tiles Cleaning Service</li>
+                        <li>Deep Cleaning Service</li>
+                        <li>Garden Cleaning</li>
+                        <li>Catering & Delivery Service</li>
+                        <li>Doorstep Car Wash</li>
+                        <li>Water Tank Cleaning</li> -->
+                    <ul class="mt-4 space-y-2 text-gray-700">
+                        <li class="flex items-center justify-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-green-500"></i>Tiles Cleaning Service</li>
+                        <li class="flex items-center justify-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-green-500"></i>Deep Cleaning Service</li>
+                        <li class="flex items-center justify-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-green-500"></i>Garden Cleaning</li>
+                        <li class="flex items-center justify-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-green-500"></i>Catering & Delivery Service</li>
+                        <li class="flex items-center justify-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-green-500"></i>Doorstep Car Wash</li>
+                        <li class="flex items-center justify-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-green-500"></i>Water Tank Cleaning</li>
+                    </ul>
+                    <div class="mt-4 space-y-2 text-sm"><p class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-gray-400"></i> Tiruvannamalai</p><p class="flex items-center gap-2"><i data-lucide="phone" class="w-4 h-4 text-gray-400"></i> 8925818294</p></div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 flex justify-between items-center"><p class="flex items-center gap-1"><i data-lucide="star" class="w-4 h-4 rating-star fill-current"></i><span class="font-semibold">4.5</span><span class="text-sm text-gray-400">/5.0</span></p><a href="tel:8925818294" class="bg-brand-orange text-white text-sm font-semibold px-4 py-2 rounded-lg hover:bg-orange-600 transition">Contact</a></div>
+                </div>
+            </div>
     </section>
 
 
@@ -923,6 +982,9 @@
         </div>
     </div>
 
+    <!-- Vehicle Rentals Modal -->
+ 
+
     <script>
         lucide.createIcons();
 
@@ -982,6 +1044,34 @@
 
             closeCleaningModalBtn.addEventListener('click', closeCleaning);
             cleaningModal.addEventListener('click', (event) => event.target === cleaningModal && closeCleaning());
+        }
+
+        // --- Vehicle Rentals Modal Logic ---
+        const viewRentalsBtn = document.getElementById('view-rentals-btn');
+        const rentalsModal = document.getElementById('rentals-modal');
+        const rentalsModalContent = document.getElementById('rentals-modal-content');
+        const closeRentalsModalBtn = document.getElementById('close-rentals-modal');
+        const dismissRentalsModalBtn = document.getElementById('dismiss-rentals-modal');
+
+        if (viewRentalsBtn) {
+            const openModal = () => {
+                rentalsModal.classList.remove('hidden');
+                rentalsModal.classList.add('flex');
+                setTimeout(() => {
+                    rentalsModalContent.classList.remove('scale-95', 'opacity-0');
+                }, 10);
+            };
+            const closeModal = () => {
+                rentalsModalContent.classList.add('scale-95', 'opacity-0');
+                setTimeout(() => {
+                    rentalsModal.classList.add('hidden');
+                    rentalsModal.classList.remove('flex');
+                }, 200);
+            };
+            viewRentalsBtn.addEventListener('click', openModal);
+            closeRentalsModalBtn.addEventListener('click', closeModal);
+            dismissRentalsModalBtn.addEventListener('click', closeModal);
+            rentalsModal.addEventListener('click', (event) => event.target === rentalsModal && closeModal());
         }
 
         // --- View More Services Logic ---
