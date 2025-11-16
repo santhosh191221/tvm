@@ -21,7 +21,6 @@
                 url("tvm.jpeg");
             background-size: cover;
             background-position: center center;
-            background-attachment: fixed;
         }
         .text-brand-orange {
             color: #f97316;
@@ -124,22 +123,22 @@
         <div class="container mx-auto px-6 mt-16">
             <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 max-w-4xl mx-auto">
                 <div class="card p-4 text-center">
-                    <i data-lucide="calendar" class="w-8 h-8 mx-auto text-brand-orange"></i>
+                    <i data-lucide="flame" class="w-8 h-8 mx-auto text-brand-orange"></i>
                     <p class="text-2xl font-bold mt-2">50+</p>
                     <p class="text-sm text-gray-500">Annual Events</p>
                 </div>
                 <div class="card p-4 text-center">
-                    <i data-lucide="store" class="w-8 h-8 mx-auto text-brand-orange"></i>
+                    <i data-lucide="shopping-bag" class="w-8 h-8 mx-auto text-brand-orange"></i>
                     <p class="text-2xl font-bold mt-2">100+</p>
                     <p class="text-sm text-gray-500">Local Services</p>
                 </div>
                  <div class="card p-4 text-center">
-                    <i data-lucide="sparkles" class="w-8 h-8 mx-auto text-brand-orange"></i>
+                    <i data-lucide="gift" class="w-8 h-8 mx-auto text-brand-orange"></i>
                     <p class="text-2xl font-bold mt-2">200+</p>
                     <p class="text-sm text-gray-500">Active Offers</p>
                 </div>
                 <div class="card p-4 text-center">
-                    <i data-lucide="map-pin" class="w-8 h-8 mx-auto text-brand-orange"></i>
+                    <i data-lucide="map" class="w-8 h-8 mx-auto text-brand-orange"></i>
                     <p class="text-2xl font-bold mt-2">Live</p>
                     <p class="text-sm text-gray-500">Location Updates</p>
                 </div>
@@ -285,10 +284,11 @@
             <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
                 <!-- Offer Cards -->
                 <div class="card p-6">
-                    <div class="flex justify-between items-center">
+                    <div class="flex justify-between items-start">
                         <h4 class="text-lg font-semibold">Farm Fresh Organics</h4>
-                        <span class="tag tag-yellow text-xs">Festival Sale</span>
+                        <i data-lucide="flame" class="w-4 h-4 text-brand-orange"></i>
                     </div>
+                    <span class="tag tag-yellow text-xs mt-1">Festival Sale</span>
                     <p class="text-sm text-gray-500 mt-1">Organics product</p>
                     <div class="mt-4 space-y-2 text-sm">
                         <p class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-gray-400"></i> 110/5, Vettavalam Road</p>
@@ -297,10 +297,11 @@
                     <a href="#" class="block text-center w-full mt-6 bg-brand-orange text-white text-sm font-semibold py-3 rounded-lg hover:bg-orange-600 transition">Locate Shop</a>
                 </div>
                  <div class="card p-6">
-                    <div class="flex justify-between items-center">
+                    <div class="flex justify-between items-start">
                         <h4 class="text-lg font-semibold">Section foot wear</h4>
-                        <span class="tag tag-blue text-xs">Special Offer</span>
+                        <i data-lucide="flame" class="w-4 h-4 text-brand-orange"></i>
                     </div>
+                    <span class="tag tag-blue text-xs mt-1">Special Offer</span>
                     <p class="text-sm text-gray-500 mt-1">Trending shoes and slippers available</p>
                     <div class="mt-4 space-y-2 text-sm">
                         <p class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-gray-400"></i> Sannadhi Street</p>
@@ -309,10 +310,11 @@
                     <a href="#" class="block text-center w-full mt-6 bg-brand-orange text-white text-sm font-semibold py-3 rounded-lg hover:bg-orange-600 transition">Locate Shop</a>
                 </div>
                  <div class="card p-6">
-                    <div class="flex justify-between items-center">
+                    <div class="flex justify-between items-start">
                         <h4 class="text-lg font-semibold">Balaji EMPORIUM</h4>
-                        <span class="tag tag-green text-xs">Seasonal Sale</span>
+                        <i data-lucide="flame" class="w-4 h-4 text-brand-orange"></i>
                     </div>
+                    <span class="tag tag-green text-xs mt-1">Seasonal Sale</span>
                     <p class="text-sm text-gray-500 mt-1">Providing wooden toys</p>
                     <div class="mt-4 space-y-2 text-sm">
                         <p class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-gray-400"></i> East Gate</p>
@@ -321,10 +323,11 @@
                     <a href="#" class="block text-center w-full mt-6 bg-brand-orange text-white text-sm font-semibold py-3 rounded-lg hover:bg-orange-600 transition">Locate Shop</a>
                 </div>
                 <div class="card p-6">
-                    <div class="flex justify-between items-center">
+                    <div class="flex justify-between items-start">
                         <h4 class="text-lg font-semibold">Unique mens wear</h4>
-                        <span class="tag tag-blue text-xs">Men's Fashion</span>
+                        <i data-lucide="flame" class="w-4 h-4 text-brand-orange"></i>
                     </div>
+                    <span class="tag tag-blue text-xs mt-1">Men's Fashion</span>
                     <p class="text-sm text-gray-500 mt-1">The latest trends in men's fashion.</p>
                     <div class="mt-4 space-y-2 text-sm">
                         <p class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-gray-400"></i> Tiruvanamalai</p>
@@ -380,7 +383,12 @@
                 <div id="services-grid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 overflow-hidden max-h-[48rem] transition-all duration-700">
                 <!-- Service Cards -->
                 <div class="card p-6">
-                    <div class="flex justify-between items-start"><div class="flex items-center gap-3"><i data-lucide="gem" class="w-6 h-6 text-brand-orange"></i><h4 class="text-lg font-semibold">Nk Makeover Artistry</h4></div><span class="tag tag-gray text-xs">Makeup</span></div>
+                    <div class="flex justify-between items-start">
+                        <div class="flex items-center gap-3">
+                            <i data-lucide="gem" class="w-6 h-6 text-brand-orange"></i><h4 class="text-lg font-semibold">Nk Makeover Artistry</h4>
+                        </div>
+                        <i data-lucide="flame" class="w-4 h-4 text-brand-orange"></i>
+                    </div>
                     <p class="mt-2 text-sm text-gray-500">We are giving budget friendly makeup services.</p>
                     <div class="mt-4 space-y-2 text-sm"><p class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-gray-400"></i> Tiruvannamalai </p><p class="flex items-center gap-2"><i data-lucide="phone" class="w-4 h-4 text-gray-400"></i> 8778979277</p></div>
                     <div class="mt-4 pt-4 border-t border-gray-100 flex justify-between items-center"><p class="flex items-center gap-1"><i data-lucide="star" class="w-4 h-4 rating-star fill-current"></i><span class="font-semibold">4.5</span><span class="text-sm text-gray-400">/5.0</span></p><a href="tel:8778979277" class="bg-brand-orange text-white text-sm font-semibold px-4 py-2 rounded-lg hover:bg-orange-600 transition">Contact</a></div>
@@ -388,17 +396,25 @@
                 <div class="card p-6">
                     <div class="flex justify-between items-start"><div class="flex items-center gap-3"><i data-lucide="flower-2" class="w-6 h-6 text-brand-orange"></i><h4 class="text-lg font-semibold">Aadhu decores</h4></div><span class="tag tag-gray text-xs">Decoration</span></div>
                     <p class="mt-2 text-sm text-gray-500">We are providing a premium and budget friendly decoration services </p>
-                    <div class="mt-4 space-y-2 text-sm"><p class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-gray-400"></i> Tiruvannamalai </p><p class="flex items-center gap-2"><i data-lucide="phone" class="w-4 h-4 text-gray-400"></i> 9940962507</p></div>
+                    <div class="mt-4 space-y-2 text-sm"><p class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-gray-400"></i> Tiruvannamalai </p><p class="flex items-center gap-2"><i data-lucide="phone" class="w-4 h-4 text-gray-400"></i> 9940962507</p>
+                        <i data-lucide="flame" class="w-4 h-4 text-brand-orange"></i>
+                    </div>
                     <div class="mt-4 pt-4 border-t border-gray-100 flex justify-between items-center"><p class="flex items-center gap-1"><i data-lucide="star" class="w-4 h-4 rating-star fill-current"></i><span class="font-semibold">4.5</span><span class="text-sm text-gray-400">/5.0</span></p><a href="tel:9940962507" class="bg-brand-orange text-white text-sm font-semibold px-4 py-2 rounded-lg hover:bg-orange-600 transition">Contact</a></div>
                 </div>
                 <div class="card p-6">
-                    <div class="flex justify-between items-start"><div class="flex items-center gap-3"><i data-lucide="shopping-bag" class="w-6 h-6 text-brand-orange"></i><h4 class="text-lg font-semibold">Queen Dazzlings Fashion Jewellery</h4></div><span class="tag tag-gray text-xs">Other</span></div>
+                    <div class="flex justify-between items-start">
+                        <div class="flex items-center gap-3"><i data-lucide="shopping-bag" class="w-6 h-6 text-brand-orange"></i><h4 class="text-lg font-semibold">Queen Dazzlings Fashion Jewellery</h4></div>
+                        <i data-lucide="flame" class="w-4 h-4 text-brand-orange"></i>
+                    </div>
                     <p class="mt-2 text-sm text-gray-500"></p>
                     <div class="mt-4 space-y-2 text-sm"><p class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-gray-400"></i> Tiruvannamalai</p><p class="flex items-center gap-2"><i data-lucide="phone" class="w-4 h-4 text-gray-400"></i> 9600985546</p></div>
                     <div class="mt-4 pt-4 border-t border-gray-100 flex justify-between items-center"><p class="flex items-center gap-1"><i data-lucide="star" class="w-4 h-4 rating-star fill-current"></i><span class="font-semibold">4.5</span><span class="text-sm text-gray-400">/5.0</span></p><a href="tel:9600985546" class="bg-brand-orange text-white text-sm font-semibold px-4 py-2 rounded-lg hover:bg-orange-600 transition">Contact</a></div>
                 </div>
                 <div class="card p-6">
-                    <div class="flex justify-between items-start"><div class="flex items-center gap-3"><i data-lucide="gem" class="w-6 h-6 text-brand-orange"></i><h4 class="text-lg font-semibold">Nisha makeup Studio&amp;Academy </h4></div><span class="tag tag-gray text-xs">Makeup</span></div>
+                    <div class="flex justify-between items-start">
+                        <div class="flex items-center gap-3"><i data-lucide="gem" class="w-6 h-6 text-brand-orange"></i><h4 class="text-lg font-semibold">Nisha makeup Studio&amp;Academy </h4></div>
+                        <i data-lucide="flame" class="w-4 h-4 text-brand-orange"></i>
+                    </div>
                     <p class="mt-2 text-sm text-gray-500">Best Makeup Artist in Thiruvannamalai 😍😍😍Makeup educator✨❣️❣️❣️</p>
                     <div class="mt-4 space-y-2 text-sm"><p class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-gray-400"></i> Thiruvannamalai</p><p class="flex items-center gap-2"><i data-lucide="phone" class="w-4 h-4 text-gray-400"></i> 9003534187</p></div>
                     <div class="mt-4 pt-4 border-t border-gray-100 flex justify-between items-center"><p class="flex items-center gap-1"><i data-lucide="star" class="w-4 h-4 rating-star fill-current"></i><span class="font-semibold">4.5</span><span class="text-sm text-gray-400">/5.0</span></p><a href="tel:9003534187" class="bg-brand-orange text-white text-sm font-semibold px-4 py-2 rounded-lg hover:bg-orange-600 transition">Contact</a></div>
@@ -406,17 +422,25 @@
                 <div class="card p-6">
                     <div class="flex justify-between items-start"><div class="flex items-center gap-3"><i data-lucide="brush" class="w-6 h-6 text-brand-orange"></i><h4 class="text-lg font-semibold">Unique Artistry Academy </h4></div><span class="tag tag-gray text-xs">Mehndi Artist</span></div>
                     <p class="mt-2 text-sm text-gray-500">We are taking classes for mehndi </p>
-                    <div class="mt-4 space-y-2 text-sm"><p class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-gray-400"></i> Tiruvannamalai </p><p class="flex items-center gap-2"><i data-lucide="phone" class="w-4 h-4 text-gray-400"></i> 6382270965</p></div>
+                    <div class="mt-4 space-y-2 text-sm"><p class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-gray-400"></i> Tiruvannamalai </p><p class="flex items-center gap-2"><i data-lucide="phone" class="w-4 h-4 text-gray-400"></i> 6382270965</p>
+                        <i data-lucide="flame" class="w-4 h-4 text-brand-orange"></i>
+                    </div>
                     <div class="mt-4 pt-4 border-t border-gray-100 flex justify-between items-center"><p class="flex items-center gap-1"><i data-lucide="star" class="w-4 h-4 rating-star fill-current"></i><span class="font-semibold">4.5</span><span class="text-sm text-gray-400">/5.0</span></p><a href="tel:6382270965" class="bg-brand-orange text-white text-sm font-semibold px-4 py-2 rounded-lg hover:bg-orange-600 transition">Contact</a></div>
                 </div>
                 <div class="card p-6">
-                    <div class="flex justify-between items-start"><div class="flex items-center gap-3"><i data-lucide="brush" class="w-6 h-6 text-brand-orange"></i><h4 class="text-lg font-semibold">Mehandi artist </h4></div><span class="tag tag-gray text-xs">Makeup</span></div>
+                    <div class="flex justify-between items-start">
+                        <div class="flex items-center gap-3"><i data-lucide="brush" class="w-6 h-6 text-brand-orange"></i><h4 class="text-lg font-semibold">Mehandi artist </h4></div>
+                        <i data-lucide="flame" class="w-4 h-4 text-brand-orange"></i>
+                    </div>
                     <p class="mt-2 text-sm text-gray-500">Hi dears , it's #@heenaa_mehandi.. all designs available at affordable prices 🥳..home service 🏡 available at low prices 😁...call or dm to me ...</p>
                     <div class="mt-4 space-y-2 text-sm"><p class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-gray-400"></i> Parvadhamalai , thiruvannamalai surrounding </p><p class="flex items-center gap-2"><i data-lucide="phone" class="w-4 h-4 text-gray-400"></i> 9360505675</p></div>
                     <div class="mt-4 pt-4 border-t border-gray-100 flex justify-between items-center"><p class="flex items-center gap-1"><i data-lucide="star" class="w-4 h-4 rating-star fill-current"></i><span class="font-semibold">4.5</span><span class="text-sm text-gray-400">/5.0</span></p><a href="tel:9360505675" class="bg-brand-orange text-white text-sm font-semibold px-4 py-2 rounded-lg hover:bg-orange-600 transition">Contact</a></div>
                 </div>
                 <div class="card p-6">
-                    <div class="flex justify-between items-start"><div class="flex items-center gap-3"><i data-lucide="gift" class="w-6 h-6 text-brand-orange"></i><h4 class="text-lg font-semibold">The Magic Moments </h4></div><span class="tag tag-gray text-xs">Surprise Events</span></div>
+                    <div class="flex justify-between items-start">
+                        <div class="flex items-center gap-3"><i data-lucide="gift" class="w-6 h-6 text-brand-orange"></i><h4 class="text-lg font-semibold">The Magic Moments </h4></div>
+                        <i data-lucide="flame" class="w-4 h-4 text-brand-orange"></i>
+                    </div>
                     <p class="mt-2 text-sm text-gray-500">"✨Celebrate ur soul at Private Theatre🎬 💆‍♀️Relax ur soul wit Fish Pedicure🐟 🥗Savor Fresh Flavors at Veg Café🌱 🎮Step into Fun VR Games🕹️ 1stop destination for fun, relaxation and to create lifetime memories🎉"</p>
                     <div class="mt-4 space-y-2 text-sm"><p class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-gray-400"></i> RMB Complex, Thandrampattu Rd, opposite to Old GH, Kamarajarsilai, Ganesapuram, Tiruvannamalai, Tamil Nadu 606 - 601.</p><p class="flex items-center gap-2"><i data-lucide="phone" class="w-4 h-4 text-gray-400"></i> 9884838129</p></div>
                     <div class="mt-4 pt-4 border-t border-gray-100 flex justify-between items-center"><p class="flex items-center gap-1"><i data-lucide="star" class="w-4 h-4 rating-star fill-current"></i><span class="font-semibold">4.5</span><span class="text-sm text-gray-400">/5.0</span></p><a href="tel:9884838129" class="bg-brand-orange text-white text-sm font-semibold px-4 py-2 rounded-lg hover:bg-orange-600 transition">Contact</a></div>
@@ -424,23 +448,34 @@
                 <div class="card p-6">
                     <div class="flex justify-between items-start"><div class="flex items-center gap-3"><i data-lucide="utensils-crossed" class="w-6 h-6 text-brand-orange"></i><h4 class="text-lg font-semibold">TN25 Briyani Catering </h4></div><span class="tag tag-gray text-xs">Catering</span></div>
                     <p class="mt-2 text-sm text-gray-500">"We have theatre style seasoning popcorn stall ,and Authentic 🔥Firewood Biryani All Over Tamil Nadu Party &amp; Event Orders Taken"</p>
-                    <div class="mt-4 space-y-2 text-sm"><p class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-gray-400"></i> Tiruvannamalai </p><p class="flex items-center gap-2"><i data-lucide="phone" class="w-4 h-4 text-gray-400"></i> 9361377759</p></div>
+                    <div class="mt-4 space-y-2 text-sm"><p class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-gray-400"></i> Tiruvannamalai </p><p class="flex items-center gap-2"><i data-lucide="phone" class="w-4 h-4 text-gray-400"></i> 9361377759</p>
+                        <i data-lucide="flame" class="w-4 h-4 text-brand-orange"></i>
+                    </div>
                     <div class="mt-4 pt-4 border-t border-gray-100 flex justify-between items-center"><p class="flex items-center gap-1"><i data-lucide="star" class="w-4 h-4 rating-star fill-current"></i><span class="font-semibold">4.5</span><span class="text-sm text-gray-400">/5.0</span></p><a href="tel:9361377759" class="bg-brand-orange text-white text-sm font-semibold px-4 py-2 rounded-lg hover:bg-orange-600 transition">Contact</a></div>
                 </div>
                 <div class="card p-6">
-                    <div class="flex justify-between items-start"><div class="flex items-center gap-3"><i data-lucide="smartphone" class="w-6 h-6 text-brand-orange"></i><h4 class="text-lg font-semibold">RD MOBILE SERVICE </h4></div><span class="tag tag-gray text-xs">Mobile/Laptop service</span></div>
+                    <div class="flex justify-between items-start">
+                        <div class="flex items-center gap-3"><i data-lucide="smartphone" class="w-6 h-6 text-brand-orange"></i><h4 class="text-lg font-semibold">RD MOBILE SERVICE </h4></div>
+                        <i data-lucide="flame" class="w-4 h-4 text-brand-orange"></i>
+                    </div>
                     <p class="mt-2 text-sm text-gray-500">"Our broken mobiles and labtops service on your location like a door step services Display changes start from 1500rs only temper glass and case head set free "</p>
                     <div class="mt-4 space-y-2 text-sm"><p class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-gray-400"></i> On your location </p><p class="flex items-center gap-2"><i data-lucide="phone" class="w-4 h-4 text-gray-400"></i> 8531046477</p></div>
                     <div class="mt-4 pt-4 border-t border-gray-100 flex justify-between items-center"><p class="flex items-center gap-1"><i data-lucide="star" class="w-4 h-4 rating-star fill-current"></i><span class="font-semibold">4.5</span><span class="text-sm text-gray-400">/5.0</span></p><a href="tel:8531046477" class="bg-brand-orange text-white text-sm font-semibold px-4 py-2 rounded-lg hover:bg-orange-600 transition">Contact</a></div>
                 </div>
                 <div class="card p-6">
-                    <div class="flex justify-between items-start"><div class="flex items-center gap-3"><i data-lucide="users" class="w-6 h-6 text-brand-orange"></i><h4 class="text-lg font-semibold">Job Manpower </h4></div><span class="tag tag-gray text-xs">Manpower agency</span></div>
+                    <div class="flex justify-between items-start">
+                        <div class="flex items-center gap-3"><i data-lucide="users" class="w-6 h-6 text-brand-orange"></i><h4 class="text-lg font-semibold">Job Manpower </h4></div>
+                        <i data-lucide="flame" class="w-4 h-4 text-brand-orange"></i>
+                    </div>
                     <p class="mt-2 text-sm text-gray-500">We are providing manpower to the business and local shops</p>
                     <div class="mt-4 space-y-2 text-sm"><p class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-gray-400"></i> Tiruvannamalai</p><p class="flex items-center gap-2"><i data-lucide="phone" class="w-4 h-4 text-gray-400"></i> 9629972285</p></div>
                     <div class="mt-4 pt-4 border-t border-gray-100 flex justify-between items-center"><p class="flex items-center gap-1"><i data-lucide="star" class="w-4 h-4 rating-star fill-current"></i><span class="font-semibold">4.5</span><span class="text-sm text-gray-400">/5.0</span></p><a href="tel:9629972285" class="bg-brand-orange text-white text-sm font-semibold px-4 py-2 rounded-lg hover:bg-orange-600 transition">Contact</a></div>
                 </div>
                 <div class="card p-6">
-                    <div class="flex justify-between items-start"><div class="flex items-center gap-3"><i data-lucide="briefcase" class="w-6 h-6 text-brand-orange"></i><h4 class="text-lg font-semibold">Job vacancy</h4></div><span class="tag tag-gray text-xs">Hiring</span></div>
+                    <div class="flex justify-between items-start">
+                        <div class="flex items-center gap-3"><i data-lucide="briefcase" class="w-6 h-6 text-brand-orange"></i><h4 class="text-lg font-semibold">Job vacancy</h4></div>
+                        <i data-lucide="flame" class="w-4 h-4 text-brand-orange"></i>
+                    </div>
                     <p class="mt-2 text-sm text-gray-500">We have hiring both male and female. 10+ members wanted</p>
                     <div class="mt-4 space-y-2 text-sm"><p class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-gray-400"></i> Tiruvannamalai</p><p class="flex items-center gap-2"><i data-lucide="phone" class="w-4 h-4 text-gray-400"></i> 9629972285</p></div>
                     <div class="mt-4 pt-4 border-t border-gray-100 flex justify-between items-center"><p class="flex items-center gap-1"><i data-lucide="star" class="w-4 h-4 rating-star fill-current"></i><span class="font-semibold">4.5</span><span class="text-sm text-gray-400">/5.0</span></p><a href="tel:9629972285" class="bg-brand-orange text-white text-sm font-semibold px-4 py-2 rounded-lg hover:bg-orange-600 transition">Contact</a></div>
@@ -465,8 +500,11 @@
             <div class="grid grid-cols-1 gap-8 justify-items-center">
                 <div class="card p-6">
                     <div class="flex justify-between items-start">
-                        <div class="flex items-center gap-3"><i data-lucide="sparkles" class="w-8 h-8 text-brand-orange"></i><h4 class="text-2xl font-bold">Good Time Service</h4></div>
-                        <span class="tag tag-gray text-xs">Cleaning Work</span>
+                        <div class="flex items-center gap-3">
+                            <i data-lucide="sparkles" class="w-8 h-8 text-brand-orange"></i>
+                            <h4 class="text-2xl font-bold">Good Time Service</h4>
+                        </div>
+                        <i data-lucide="flame" class="w-4 h-4 text-brand-orange"></i>
                     </div>
                     <p class="mt-4 text-gray-600">We offer a wide range of professional cleaning services for your home and business. Our services include:</p>
                     <!-- <ul class="mt-4 space-y-2 text-gray-700 list-disc list-inside">
@@ -503,8 +541,10 @@
                 <div id="stay-grid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 overflow-hidden max-h-[26rem] transition-all duration-700">
                 <!-- Stay Cards -->
                 <div class="card overflow-hidden">
-                    <div class="p-6">
-                        <div class="flex justify-between items-start"><div class="flex items-center gap-3"><i data-lucide="building-2" class="w-6 h-6 text-brand-orange"></i><div><h4 class="text-lg font-semibold">Omkara - The Fives Guest House</h4></div></div><span class="tag tag-gray text-xs">Guest House</span></div>
+                    <div class="p-6">                        <div class="flex justify-between items-start">
+                            <div class="flex items-center gap-3"><i data-lucide="building-2" class="w-6 h-6 text-brand-orange"></i><div><h4 class="text-lg font-semibold">Omkara - The Fives Guest House</h4></div></div>
+                            <i data-lucide="flame" class="w-4 h-4 text-brand-orange"></i>
+                        </div>
                         <p class="mt-2 text-sm text-gray-500"></p>
                         <div class="my-4 flex justify-between items-end"><p class="text-sm text-gray-500">23 Rooms</p></div>
                         <div class="mt-4 space-y-2 text-sm"><p class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-gray-400"></i> Raman Asharam </p><p class="flex items-center gap-2"><i data-lucide="phone" class="w-4 h-4 text-gray-400"></i> 8903360409</p></div>
@@ -513,7 +553,10 @@
                 </div>
                 <div class="card overflow-hidden">
                     <div class="p-6">
-                        <div class="flex justify-between items-start"><div class="flex items-center gap-3"><i data-lucide="home" class="w-6 h-6 text-brand-orange"></i><div><h4 class="text-lg font-semibold">Sudha stays</h4></div></div><span class="tag tag-gray text-xs">Room</span></div>
+                        <div class="flex justify-between items-start">
+                            <div class="flex items-center gap-3"><i data-lucide="home" class="w-6 h-6 text-brand-orange"></i><div><h4 class="text-lg font-semibold">Sudha stays</h4></div></div>
+                            <i data-lucide="flame" class="w-4 h-4 text-brand-orange"></i>
+                        </div>
                         <p class="mt-2 text-sm text-gray-500">Home Stay available</p>
                         <div class="my-4 flex justify-between items-end"><p class="text-sm text-gray-500">10 Rooms</p></div>
                         <div class="mt-4 space-y-2 text-sm"><p class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-gray-400"></i> Gandhi nagar </p><p class="flex items-center gap-2"><i data-lucide="phone" class="w-4 h-4 text-gray-400"></i> 7092160710</p></div>
@@ -522,7 +565,10 @@
                 </div>
                 <div class="card overflow-hidden">
                     <div class="p-6">
-                        <div class="flex justify-between items-start"><div class="flex items-center gap-3"><i data-lucide="building-2" class="w-6 h-6 text-brand-orange"></i><div><h4 class="text-lg font-semibold">SKM guest house</h4></div></div><span class="tag tag-gray text-xs">Guest House</span></div>
+                        <div class="flex justify-between items-start">
+                            <div class="flex items-center gap-3"><i data-lucide="building-2" class="w-6 h-6 text-brand-orange"></i><div><h4 class="text-lg font-semibold">SKM guest house</h4></div></div>
+                            <i data-lucide="flame" class="w-4 h-4 text-brand-orange"></i>
+                        </div>
                         <p class="mt-2 text-sm text-gray-500">Premium guest house available</p>
                         <div class="my-4 flex justify-between items-end"><p class="text-sm text-gray-500">2 Rooms</p></div>
                         <div class="mt-4 space-y-2 text-sm"><p class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-gray-400"></i> Tiruvannamalai </p><p class="flex items-center gap-2"><i data-lucide="phone" class="w-4 h-4 text-gray-400"></i> Not Available</p></div>
@@ -531,7 +577,10 @@
                 </div>
                 <div class="card overflow-hidden">
                     <div class="p-6">
-                        <div class="flex justify-between items-start"><div class="flex items-center gap-3"><i data-lucide="bed-double" class="w-6 h-6 text-brand-orange"></i><div><h4 class="text-lg font-semibold">Arunachala Stays</h4></div></div><span class="tag tag-gray text-xs">Room</span></div>
+                        <div class="flex justify-between items-start">
+                            <div class="flex items-center gap-3"><i data-lucide="bed-double" class="w-6 h-6 text-brand-orange"></i><div><h4 class="text-lg font-semibold">Arunachala Stays</h4></div></div>
+                            <i data-lucide="flame" class="w-4 h-4 text-brand-orange"></i>
+                        </div>
                         <p class="mt-2 text-sm text-gray-500">Budget friendly and affordable Room available for Deepam</p>
                         <div class="my-4 flex justify-between items-end"><p class="text-sm text-gray-500">1 Room</p></div>
                         <div class="mt-4 space-y-2 text-sm"><p class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-gray-400"></i> Near Gandhi nagar</p><p class="flex items-center gap-2"><i data-lucide="phone" class="w-4 h-4 text-gray-400"></i> 9092284574</p></div>
@@ -558,10 +607,11 @@
             <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Dining Cards -->
                 <div class="card p-6">
-                    <div class="flex justify-between items-center">
+                    <div class="flex justify-between items-start">
                         <h4 class="text-lg font-semibold">TN25 Night Hub Briyani</h4>
-                        <span class="tag tag-red text-xs">Non-Veg</span>
+                        <i data-lucide="flame" class="w-4 h-4 text-brand-orange"></i>
                     </div>
+                    <span class="tag tag-red text-xs mt-1">Non-Veg</span>
                     <p class="text-sm text-gray-500 mt-1 flex items-center gap-1"><i data-lucide="star" class="w-4 h-4 rating-star fill-current"></i> 4.8 - Biryani</p>
                     <div class="mt-4 bg-gray-50 p-3 rounded-lg">
                         <p class="text-sm font-semibold">Speciality:</p>
@@ -576,10 +626,11 @@
                     <a href="tel:9361377759" class="block text-center w-full mt-6 bg-brand-orange text-white text-sm font-semibold py-3 rounded-lg hover:bg-orange-600 transition">Contact</a>
                 </div>
                 <div class="card p-6">
-                    <div class="flex justify-between items-center">
+                    <div class="flex justify-between items-start">
                         <h4 class="text-lg font-semibold">Hotel Ponrayar</h4>
-                        <span class="tag tag-green text-xs">Vegetarian</span>
+                        <i data-lucide="flame" class="w-4 h-4 text-brand-orange"></i>
                     </div>
+                    <span class="tag tag-green text-xs mt-1">Vegetarian</span>
                     <p class="text-sm text-gray-500 mt-1 flex items-center gap-1"><i data-lucide="star" class="w-4 h-4 rating-star fill-current"></i> 4.6 - South Indian</p>
                     <div class="mt-4 bg-gray-50 p-3 rounded-lg">
                         <p class="text-sm font-semibold">Speciality:</p>
@@ -595,12 +646,13 @@
                 </div>
 
                 <div class="card p-6">
-                    <div class="flex justify-between items-center">
+                    <div class="flex justify-between items-start">
                         <h4 class="text-lg font-semibold">Taj china town</h4>
-                        <div class="flex gap-2">
-                           <span class="tag tag-blue text-xs">Cafe</span>
-                           <span class="tag tag-green text-xs">Veg</span>
-                        </div>
+                        <i data-lucide="flame" class="w-4 h-4 text-brand-orange"></i>
+                    </div>
+                    <div class="flex gap-2 mt-1">
+                       <span class="tag tag-blue text-xs">Cafe</span>
+                       <span class="tag tag-green text-xs">Veg</span>
                     </div>
                     <p class="text-sm text-gray-500 mt-1 flex items-center gap-1"><i data-lucide="star" class="w-4 h-4 rating-star fill-current"></i> 4.4 - Multi-Cuisine</p>
                     <div class="mt-4 bg-gray-50 p-3 rounded-lg">
@@ -617,12 +669,13 @@
                 </div>
 
                 <div class="card p-6">
-                    <div class="flex justify-between items-center">
+                    <div class="flex justify-between items-start">
                         <h4 class="text-lg font-semibold">Arunachala Mess</h4>
-                         <div class="flex gap-2">
-                           <span class="tag tag-gray text-xs">Mess</span>
-                           <span class="tag tag-green text-xs">Veg</span>
-                        </div>
+                        <i data-lucide="flame" class="w-4 h-4 text-brand-orange"></i>
+                    </div>
+                     <div class="flex gap-2 mt-1">
+                       <span class="tag tag-gray text-xs">Mess</span>
+                       <span class="tag tag-green text-xs">Veg</span>
                     </div>
                     <p class="text-sm text-gray-500 mt-1 flex items-center gap-1"><i data-lucide="star" class="w-4 h-4 rating-star fill-current"></i> 4.5 - South Indian</p>
                     <div class="mt-4 bg-gray-50 p-3 rounded-lg">
@@ -650,7 +703,12 @@
             </div>
             <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
                 <div class="card p-6">
-                    <div class="flex justify-between items-start"><div class="flex items-center gap-3"><i data-lucide="car" class="w-6 h-6 text-brand-orange"></i><h4 class="text-lg font-semibold">LIMRA TRAVELS</h4></div><span class="tag tag-gray text-xs">Vehicle Rental</span></div>
+                    <div class="flex justify-between items-start">
+                        <div class="flex items-center gap-3">
+                            <i data-lucide="car" class="w-6 h-6 text-brand-orange"></i><h4 class="text-lg font-semibold">LIMRA TRAVELS</h4>
+                        </div>
+                        <i data-lucide="flame" class="w-4 h-4 text-brand-orange"></i>
+                    </div>
                     <p class="mt-2 text-sm text-gray-500 line-clamp-2">Limra Travels Tiruvannamalai is your trusted partner for seamless travel experiences in the region. As a leading taxi service in Tiruvannamalai, we offer prompt & reliable transportation for all your needs...</p>
                     <div class="mt-4 space-y-2 text-sm"><p class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-gray-400"></i> Tiruvannamalai</p><p class="flex items-center gap-2"><i data-lucide="phone" class="w-4 h-4 text-gray-400"></i> 9655898212</p></div>
                     <div class="mt-4 pt-4 border-t border-gray-100 flex justify-between items-center"><p class="flex items-center gap-1"><i data-lucide="star" class="w-4 h-4 rating-star fill-current"></i><span class="font-semibold">4.8</span><span class="text-sm text-gray-400">/5.0</span></p><a href="tel:9655898212" class="bg-brand-orange text-white text-sm font-semibold px-4 py-2 rounded-lg hover:bg-orange-600 transition">Contact</a></div>
@@ -658,7 +716,9 @@
                 <div class="card p-6">
                     <div class="flex justify-between items-start"><div class="flex items-center gap-3"><i data-lucide="bus" class="w-6 h-6 text-brand-orange"></i><h4 class="text-lg font-semibold">South tourism</h4></div><span class="tag tag-gray text-xs">Vehicle Rental</span></div>
                     <p class="mt-2 text-sm text-gray-500 line-clamp-2">We are providing service sedan SUV tempo Traveller 12 seater, 18 seater, 21 seater, AC & non available.</p>
-                    <div class="mt-4 space-y-2 text-sm"><p class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-gray-400"></i> Thiruvanamalai</p><p class="flex items-center gap-2"><i data-lucide="phone" class="w-4 h-4 text-gray-400"></i> 8015111046</p></div>
+                    <div class="mt-4 space-y-2 text-sm"><p class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-gray-400"></i> Thiruvanamalai</p><p class="flex items-center gap-2"><i data-lucide="phone" class="w-4 h-4 text-gray-400"></i> 8015111046</p>
+                        <i data-lucide="flame" class="w-4 h-4 text-brand-orange"></i>
+                    </div>
                     <div class="mt-4 pt-4 border-t border-gray-100 flex justify-between items-center"><p class="flex items-center gap-1"><i data-lucide="star" class="w-4 h-4 rating-star fill-current"></i><span class="font-semibold">4.5</span><span class="text-sm text-gray-400">/5.0</span></p><a href="tel:8015111046" class="bg-brand-orange text-white text-sm font-semibold px-4 py-2 rounded-lg hover:bg-orange-600 transition">Contact</a></div>
                 </div>
             </div>
@@ -689,7 +749,7 @@
                                 <h5 class="text-lg font-semibold">Arunachala View Villa</h5>
                                 <p class="text-sm text-gray-500">Beautiful villa with Arunachala hill view.</p>
                             </div>
-                            <p class="text-xl font-bold text-brand-orange">₹ 45,00,000</p>
+                            <i data-lucide="flame" class="w-4 h-4 text-brand-orange"></i>
                         </div>
                         <p class="mt-4 text-sm font-semibold">1200 sq.ft | 3BHK + 2 Bath</p>
                         <p class="mt-1 text-sm text-gray-500 flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4"></i> Chengam Road, Tiruvannamalai</p>
@@ -710,7 +770,7 @@
                                 <h5 class="text-lg font-semibold">Temple View Apartment</h5>
                                 <p class="text-sm text-gray-500">Spacious 2BHK apartment with direct temple view.</p>
                             </div>
-                            <p class="text-xl font-bold text-brand-orange">₹ 28,00,000</p>
+                            <i data-lucide="flame" class="w-4 h-4 text-brand-orange"></i>
                         </div>
                         <p class="mt-4 text-sm font-semibold">850 sq.ft | 2BHK + 2 Bath</p>
                         <p class="mt-1 text-sm text-gray-500 flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4"></i> Polur Road, Tiruvannamalai</p>
@@ -736,7 +796,7 @@
                                 <h5 class="text-lg font-semibold">Agricultural Land - Chengam</h5>
                                 <p class="text-sm text-gray-500">Fertile agricultural land with water facility.</p>
                             </div>
-                            <p class="text-xl font-bold text-brand-orange">₹ 15,00,000</p>
+                            <i data-lucide="flame" class="w-4 h-4 text-brand-orange"></i>
                         </div>
                         <p class="mt-4 text-sm font-semibold">1 Acre</p>
                         <p class="mt-1 text-sm text-gray-500 flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4"></i> Chengam Road, 8 km from Town</p>
