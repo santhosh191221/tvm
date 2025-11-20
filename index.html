@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Discover Tiruvannamalai</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="icon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -29,6 +30,21 @@
             background-color: #f97316;
         }
         .border-brand-orange {
+
+            /* Font Awesome helper:
+               1) Add this in the <head> (once):
+                  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous">
+
+               2) Use the icon in the header (example):
+                  <h1 class="text-xl font-bold header-logo">
+                    <i class="fa-solid fa-fire text-brand-orange"></i>
+                    Info Tiruvannamalai
+                  </h1>
+
+               3) Optional small icon tweaks (add to your global styles if needed):
+                  .header-logo { display:inline-flex; align-items:center; gap:0.5rem; color:#4a2c2a; }
+                  .header-logo i { font-size:1.1rem; color:#f97316; }
+            */
             border-color: #f97316;
         }
         .shadow-custom {
@@ -239,6 +255,94 @@
         </div>
     </section>
 
+
+
+       <!-- Places to Stay Section -->
+    <section id="stay" class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h3 class="text-3xl md:text-4xl font-bold flex items-center justify-center gap-3">
+                    <i data-lucide="flame" class="text-brand-orange"></i> Places to Stay <i data-lucide="flame" class="text-brand-orange"></i>
+                </h3>
+                <p class="mt-2 text-gray-600">Comfortable accommodation options near Arunachaleswar Temple.</p>
+                <a href="https://wa.me/919003955228?text=Hello!%20I%20would%20like%20to%20list%20my%20property/hotel%20for%20stay%20on%20Info%20Tiruvannamalai." target="_blank" class="mt-4 inline-flex items-center gap-2 bg-green-500 text-white font-semibold py-2 px-4 rounded-lg shadow-md hover:bg-green-600 transition">
+                    <i data-lucide="message-circle" class="w-5 h-5"></i> List Your Property
+                </a>
+            </div>
+            <div id="stay-container" class="relative">
+                <div id="stay-grid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Stay Cards -->
+                <div class="card overflow-hidden">
+                    <div class="p-6">                        <div class="flex justify-between items-start">
+                            <div class="flex items-center gap-3"><i data-lucide="building-2" class="w-6 h-6 text-brand-orange"></i><div><h4 class="text-lg font-semibold">Omkara - The Fives Guest House</h4></div></div>
+                            <i data-lucide="flame" class="w-4 h-4 text-brand-orange"></i>
+                        </div>
+                        <p class="mt-2 text-sm text-gray-500">Premium guest house available</p>
+                        <div class="my-4 flex justify-between items-end"><p class="text-sm text-gray-500">23 Rooms</p></div>
+                        <div class="mt-4 space-y-2 text-sm"><p class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-gray-400"></i> Raman Asharam </p><p class="flex items-center gap-2"><i data-lucide="phone" class="w-4 h-4 text-gray-400"></i> 9003955228</p></div>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2">
+                        <a href="tel:9003955228" class="flex items-center justify-center gap-2 bg-brand-orange text-white text-center font-semibold py-3 hover:bg-orange-600 transition sm:rounded-bl-2xl">Contact</a>
+                        <a href="https://wa.me/919003955228?text=Hello!%20I'm%20interested%20in%20booking%20a%20room%20at%20Omkara%20-%20The%20Fives%20Guest%20House." target="_blank" class="flex items-center justify-center gap-2 bg-green-500 text-white text-center font-semibold py-3 hover:bg-green-600 transition rounded-b-2xl sm:rounded-b-none sm:rounded-br-2xl">
+                            <i data-lucide="message-circle" class="w-4 h-4"></i> Book on WhatsApp
+                        </a>
+                    </div>
+                </div>
+                <div class="card overflow-hidden">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start">
+                            <div class="flex items-center gap-3"><i data-lucide="home" class="w-6 h-6 text-brand-orange"></i><div><h4 class="text-lg font-semibold">Sudha stays</h4></div></div>
+                            <i data-lucide="flame" class="w-4 h-4 text-brand-orange"></i>
+                        </div>
+                        <p class="mt-2 text-sm text-gray-500">Home Stay available</p>
+                        <div class="my-4 flex justify-between items-end"><p class="text-sm text-gray-500">10 Rooms</p></div>
+                        <div class="mt-4 space-y-2 text-sm"><p class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-gray-400"></i> Gandhi nagar </p><p class="flex items-center gap-2"><i data-lucide="phone" class="w-4 h-4 text-gray-400"></i> 8680848193</p></div>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2">
+                        <a href="tel:9003955228" class="flex items-center justify-center gap-2 bg-brand-orange text-white text-center font-semibold py-3 hover:bg-orange-600 transition sm:rounded-bl-2xl">Contact</a>
+                        <a href="https://wa.me/919003955228?text=Hello!%20I'm%20interested%20in%20booking%20a%20room%20at%20Sudha%20stays." target="_blank" class="flex items-center justify-center gap-2 bg-green-500 text-white text-center font-semibold py-3 hover:bg-green-600 transition rounded-b-2xl sm:rounded-b-none sm:rounded-br-2xl">
+                            <i data-lucide="message-circle" class="w-4 h-4"></i> Book on WhatsApp
+                        </a>
+                    </div>
+                </div>
+                <div class="card overflow-hidden">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start">
+                            <div class="flex items-center gap-3"><i data-lucide="building-2" class="w-6 h-6 text-brand-orange"></i><div><h4 class="text-lg font-semibold">SKM guest house</h4></div></div>
+                            <i data-lucide="flame" class="w-4 h-4 text-brand-orange"></i>
+                        </div>
+                        <p class="mt-2 text-sm text-gray-500">Premium guest house available</p>
+                        <div class="my-4 flex justify-between items-end"><p class="text-sm text-gray-500">2 Rooms</p></div>
+                        <div class="mt-4 space-y-2 text-sm"><p class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-gray-400"></i> Tiruvannamalai </p><p class="flex items-center gap-2"><i data-lucide="phone" class="w-4 h-4 text-gray-400"></i> 9003955228</p></div>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2">
+                         <a href="tel:9003955228" class="flex items-center justify-center gap-2 bg-brand-orange text-white text-center font-semibold py-3 hover:bg-orange-600 transition sm:rounded-bl-2xl">Contact</a>
+                        <a href="https://wa.me/919003955228?text=Hello!%20I'm%20interested%20in%20booking%20a%20room%20at%20SKM%20guest%20house." target="_blank" class="flex items-center justify-center gap-2 bg-green-500 text-white text-center font-semibold py-3 hover:bg-green-600 transition rounded-b-2xl sm:rounded-b-none sm:rounded-br-2xl">
+                            <i data-lucide="message-circle" class="w-4 h-4"></i> Book on WhatsApp
+                        </a>
+                    </div>
+                </div>
+                <div class="card overflow-hidden">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start">
+                            <div class="flex items-center gap-3"><i data-lucide="bed-double" class="w-6 h-6 text-brand-orange"></i><div><h4 class="text-lg font-semibold">Arunachala Stays</h4></div></div>
+                            <i data-lucide="flame" class="w-4 h-4 text-brand-orange"></i>
+                        </div>
+                        <p class="mt-2 text-sm text-gray-500">Budget friendly and affordable Room available for Deepam</p>
+                        <div class="my-4 flex justify-between items-end"><p class="text-sm text-gray-500">1 Room</p></div>
+                        <div class="mt-4 space-y-2 text-sm"><p class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-gray-400"></i> Near Gandhi nagar</p><p class="flex items-center gap-2"><i data-lucide="phone" class="w-4 h-4 text-gray-400"></i> 9003955228</p></div>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2">
+                        <a href="tel:9003955228" class="flex items-center justify-center gap-2 bg-brand-orange text-white text-center font-semibold py-3 hover:bg-orange-600 transition sm:rounded-bl-2xl">Contact</a>
+                        <a href="https://wa.me/919003955228?text=Hello!%20I'm%20interested%20in%20booking%20a%20room%20at%20Arunachala%20Stays." target="_blank" class="flex items-center justify-center gap-2 bg-green-500 text-white text-center font-semibold py-3 hover:bg-green-600 transition rounded-b-2xl sm:rounded-b-none sm:rounded-br-2xl">
+                            <i data-lucide="message-circle" class="w-4 h-4"></i> Book on WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
     
 
 
@@ -580,92 +684,7 @@
 
 
 
-    <!-- Places to Stay Section -->
-    <section id="stay" class="py-20">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-12">
-                <h3 class="text-3xl md:text-4xl font-bold flex items-center justify-center gap-3">
-                    <i data-lucide="flame" class="text-brand-orange"></i> Places to Stay <i data-lucide="flame" class="text-brand-orange"></i>
-                </h3>
-                <p class="mt-2 text-gray-600">Comfortable accommodation options near Arunachaleswar Temple.</p>
-                <a href="https://wa.me/919003955228?text=Hello!%20I%20would%20like%20to%20list%20my%20property/hotel%20for%20stay%20on%20Info%20Tiruvannamalai." target="_blank" class="mt-4 inline-flex items-center gap-2 bg-green-500 text-white font-semibold py-2 px-4 rounded-lg shadow-md hover:bg-green-600 transition">
-                    <i data-lucide="message-circle" class="w-5 h-5"></i> List Your Property
-                </a>
-            </div>
-            <div id="stay-container" class="relative">
-                <div id="stay-grid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Stay Cards -->
-                <div class="card overflow-hidden">
-                    <div class="p-6">                        <div class="flex justify-between items-start">
-                            <div class="flex items-center gap-3"><i data-lucide="building-2" class="w-6 h-6 text-brand-orange"></i><div><h4 class="text-lg font-semibold">Omkara - The Fives Guest House</h4></div></div>
-                            <i data-lucide="flame" class="w-4 h-4 text-brand-orange"></i>
-                        </div>
-                        <p class="mt-2 text-sm text-gray-500">Premium guest house available</p>
-                        <div class="my-4 flex justify-between items-end"><p class="text-sm text-gray-500">23 Rooms</p></div>
-                        <div class="mt-4 space-y-2 text-sm"><p class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-gray-400"></i> Raman Asharam </p><p class="flex items-center gap-2"><i data-lucide="phone" class="w-4 h-4 text-gray-400"></i> 9003955228</p></div>
-                    </div>
-                    <div class="grid grid-cols-1 sm:grid-cols-2">
-                        <a href="tel:9003955228" class="flex items-center justify-center gap-2 bg-brand-orange text-white text-center font-semibold py-3 hover:bg-orange-600 transition sm:rounded-bl-2xl">Contact</a>
-                        <a href="https://wa.me/919003955228?text=Hello!%20I'm%20interested%20in%20booking%20a%20room%20at%20Omkara%20-%20The%20Fives%20Guest%20House." target="_blank" class="flex items-center justify-center gap-2 bg-green-500 text-white text-center font-semibold py-3 hover:bg-green-600 transition rounded-b-2xl sm:rounded-b-none sm:rounded-br-2xl">
-                            <i data-lucide="message-circle" class="w-4 h-4"></i> Book on WhatsApp
-                        </a>
-                    </div>
-                </div>
-                <div class="card overflow-hidden">
-                    <div class="p-6">
-                        <div class="flex justify-between items-start">
-                            <div class="flex items-center gap-3"><i data-lucide="home" class="w-6 h-6 text-brand-orange"></i><div><h4 class="text-lg font-semibold">Sudha stays</h4></div></div>
-                            <i data-lucide="flame" class="w-4 h-4 text-brand-orange"></i>
-                        </div>
-                        <p class="mt-2 text-sm text-gray-500">Home Stay available</p>
-                        <div class="my-4 flex justify-between items-end"><p class="text-sm text-gray-500">10 Rooms</p></div>
-                        <div class="mt-4 space-y-2 text-sm"><p class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-gray-400"></i> Gandhi nagar </p><p class="flex items-center gap-2"><i data-lucide="phone" class="w-4 h-4 text-gray-400"></i> 8680848193</p></div>
-                    </div>
-                    <div class="grid grid-cols-1 sm:grid-cols-2">
-                        <a href="tel:9003955228" class="flex items-center justify-center gap-2 bg-brand-orange text-white text-center font-semibold py-3 hover:bg-orange-600 transition sm:rounded-bl-2xl">Contact</a>
-                        <a href="https://wa.me/919003955228?text=Hello!%20I'm%20interested%20in%20booking%20a%20room%20at%20Sudha%20stays." target="_blank" class="flex items-center justify-center gap-2 bg-green-500 text-white text-center font-semibold py-3 hover:bg-green-600 transition rounded-b-2xl sm:rounded-b-none sm:rounded-br-2xl">
-                            <i data-lucide="message-circle" class="w-4 h-4"></i> Book on WhatsApp
-                        </a>
-                    </div>
-                </div>
-                <div class="card overflow-hidden">
-                    <div class="p-6">
-                        <div class="flex justify-between items-start">
-                            <div class="flex items-center gap-3"><i data-lucide="building-2" class="w-6 h-6 text-brand-orange"></i><div><h4 class="text-lg font-semibold">SKM guest house</h4></div></div>
-                            <i data-lucide="flame" class="w-4 h-4 text-brand-orange"></i>
-                        </div>
-                        <p class="mt-2 text-sm text-gray-500">Premium guest house available</p>
-                        <div class="my-4 flex justify-between items-end"><p class="text-sm text-gray-500">2 Rooms</p></div>
-                        <div class="mt-4 space-y-2 text-sm"><p class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-gray-400"></i> Tiruvannamalai </p><p class="flex items-center gap-2"><i data-lucide="phone" class="w-4 h-4 text-gray-400"></i> 9003955228</p></div>
-                    </div>
-                    <div class="grid grid-cols-1 sm:grid-cols-2">
-                         <a href="tel:9003955228" class="flex items-center justify-center gap-2 bg-brand-orange text-white text-center font-semibold py-3 hover:bg-orange-600 transition sm:rounded-bl-2xl">Contact</a>
-                        <a href="https://wa.me/919003955228?text=Hello!%20I'm%20interested%20in%20booking%20a%20room%20at%20SKM%20guest%20house." target="_blank" class="flex items-center justify-center gap-2 bg-green-500 text-white text-center font-semibold py-3 hover:bg-green-600 transition rounded-b-2xl sm:rounded-b-none sm:rounded-br-2xl">
-                            <i data-lucide="message-circle" class="w-4 h-4"></i> Book on WhatsApp
-                        </a>
-                    </div>
-                </div>
-                <div class="card overflow-hidden">
-                    <div class="p-6">
-                        <div class="flex justify-between items-start">
-                            <div class="flex items-center gap-3"><i data-lucide="bed-double" class="w-6 h-6 text-brand-orange"></i><div><h4 class="text-lg font-semibold">Arunachala Stays</h4></div></div>
-                            <i data-lucide="flame" class="w-4 h-4 text-brand-orange"></i>
-                        </div>
-                        <p class="mt-2 text-sm text-gray-500">Budget friendly and affordable Room available for Deepam</p>
-                        <div class="my-4 flex justify-between items-end"><p class="text-sm text-gray-500">1 Room</p></div>
-                        <div class="mt-4 space-y-2 text-sm"><p class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-gray-400"></i> Near Gandhi nagar</p><p class="flex items-center gap-2"><i data-lucide="phone" class="w-4 h-4 text-gray-400"></i> 9003955228</p></div>
-                    </div>
-                    <div class="grid grid-cols-1 sm:grid-cols-2">
-                        <a href="tel:9003955228" class="flex items-center justify-center gap-2 bg-brand-orange text-white text-center font-semibold py-3 hover:bg-orange-600 transition sm:rounded-bl-2xl">Contact</a>
-                        <a href="https://wa.me/919003955228?text=Hello!%20I'm%20interested%20in%20booking%20a%20room%20at%20Arunachala%20Stays." target="_blank" class="flex items-center justify-center gap-2 bg-green-500 text-white text-center font-semibold py-3 hover:bg-green-600 transition rounded-b-2xl sm:rounded-b-none sm:rounded-br-2xl">
-                            <i data-lucide="message-circle" class="w-4 h-4"></i> Book on WhatsApp
-                        </a>
-                    </div>
-                </div>
-            </div>
-            </div>
-        </div>
-    </section>
+ 
 
     <!-- Food & Dining Section -->
     <section id="dining" class="py-20 bg-white">
