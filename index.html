@@ -91,7 +91,10 @@
     <!-- Header -->
     <header class="bg-white/80 backdrop-blur-sm sticky top-0 z-50 border-b border-gray-200/50">
         <div class="container mx-auto px-6 py-3 flex justify-between items-center">
-            <h1 class="text-xl font-bold text-brand-orange">Info Tiruvannamalai</h1>
+            <a href="#" class="flex items-center gap-2">
+                <img src="icon.svg" alt="Info Tiruvannamalai logo" class="h-8">
+                <h1 class="text-xl font-bold text-brand-orange">Info Tiruvannamalai</h1>
+            </a>
             <div class="flex items-center space-x-4">
                 <nav class="hidden md:flex space-x-6 text-gray-700">
                     <a href="#events" class="hover:text-brand-orange">Events</a>
@@ -273,7 +276,9 @@
                 <div id="stay-grid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Stay Cards -->
                 <div class="card overflow-hidden">
-                    <div class="p-6">                        <div class="flex justify-between items-start">
+                    <img src="omkara.png" alt="Omkara - The Fives Guest House" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start">
                             <div class="flex items-center gap-3"><i data-lucide="building-2" class="w-6 h-6 text-brand-orange"></i><div><h4 class="text-lg font-semibold">Omkara - The Fives Guest House</h4></div></div>
                             <i data-lucide="flame" class="w-4 h-4 text-brand-orange"></i>
                         </div>
@@ -281,14 +286,20 @@
                         <div class="my-4 flex justify-between items-end"><p class="text-sm text-gray-500">23 Rooms</p></div>
                         <div class="mt-4 space-y-2 text-sm"><p class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-gray-400"></i> Raman Asharam </p><p class="flex items-center gap-2"><i data-lucide="phone" class="w-4 h-4 text-gray-400"></i> 9003955228</p></div>
                     </div>
-                    <div class="grid grid-cols-1 sm:grid-cols-2">
-                        <a href="tel:9003955228" class="flex items-center justify-center gap-2 bg-brand-orange text-white text-center font-semibold py-3 hover:bg-orange-600 transition sm:rounded-bl-2xl">Contact</a>
-                        <a href="https://wa.me/919003955228?text=Hello!%20I'm%20interested%20in%20booking%20a%20room%20at%20Omkara%20-%20The%20Fives%20Guest%20House." target="_blank" class="flex items-center justify-center gap-2 bg-green-500 text-white text-center font-semibold py-3 hover:bg-green-600 transition rounded-b-2xl sm:rounded-b-none sm:rounded-br-2xl">
-                            <i data-lucide="message-circle" class="w-4 h-4"></i> Book on WhatsApp
-                        </a>
+                    <div class="p-4 bg-gray-50 border-t">
+                        <button type="button" class="view-details-btn w-full flex items-center justify-center gap-2 bg-white border border-gray-200 text-gray-700 font-semibold py-3 rounded-2xl hover:bg-gray-50 transition"
+                            data-name="Omkara - The Fives Guest House"
+                            data-photo="omkara.png"
+                            data-price="₹1200 - ₹3000"
+                            data-contact="9003955228"
+                            data-whatsapp="https://wa.me/919003955228?text=I'm%20interested%20in%20Omkara">
+                            <i data-lucide="image" class="w-4 h-4"></i> View Details
+                        </button>
                     </div>
                 </div>
+
                 <div class="card overflow-hidden">
+                    <img src="sudha.png" alt="Sudha stays" class="w-full h-48 object-cover">
                     <div class="p-6">
                         <div class="flex justify-between items-start">
                             <div class="flex items-center gap-3"><i data-lucide="home" class="w-6 h-6 text-brand-orange"></i><div><h4 class="text-lg font-semibold">Sudha stays</h4></div></div>
@@ -296,16 +307,22 @@
                         </div>
                         <p class="mt-2 text-sm text-gray-500">Home Stay available</p>
                         <div class="my-4 flex justify-between items-end"><p class="text-sm text-gray-500">10 Rooms</p></div>
-                        <div class="mt-4 space-y-2 text-sm"><p class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-gray-400"></i> Gandhi nagar </p><p class="flex items-center gap-2"><i data-lucide="phone" class="w-4 h-4 text-gray-400"></i> 8680848193</p></div>
+                        <div class="mt-4 space-y-2 text-sm"><p class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-gray-400"></i> Gandhi nagar </p><p class="flex items-center gap-2"><i data-lucide="phone" class="w-4 h-4 text-gray-400"></i> 9003955228</p></div>
                     </div>
-                    <div class="grid grid-cols-1 sm:grid-cols-2">
-                        <a href="tel:9003955228" class="flex items-center justify-center gap-2 bg-brand-orange text-white text-center font-semibold py-3 hover:bg-orange-600 transition sm:rounded-bl-2xl">Contact</a>
-                        <a href="https://wa.me/919003955228?text=Hello!%20I'm%20interested%20in%20booking%20a%20room%20at%20Sudha%20stays." target="_blank" class="flex items-center justify-center gap-2 bg-green-500 text-white text-center font-semibold py-3 hover:bg-green-600 transition rounded-b-2xl sm:rounded-b-none sm:rounded-br-2xl">
-                            <i data-lucide="message-circle" class="w-4 h-4"></i> Book on WhatsApp
-                        </a>
+                    <div class="p-4 bg-gray-50 border-t">
+                        <button type="button" class="view-details-btn w-full flex items-center justify-center gap-2 bg-white border border-gray-200 text-gray-700 font-semibold py-3 rounded-2xl hover:bg-gray-50 transition"
+                            data-name="Sudha stays"
+                            data-photo="sudha.png"
+                            data-price="₹800 - ₹1800"
+                            data-contact="9003955228"
+                            data-whatsapp="https://wa.me/919003955228?text=I'm%20interested%20in%20Sudha%20stays">
+                            <i data-lucide="image" class="w-4 h-4"></i> View Details
+                        </button>
                     </div>
                 </div>
+
                 <div class="card overflow-hidden">
+                    <img src="skm.png" alt="SKM guest house" class="w-full h-48 object-cover">
                     <div class="p-6">
                         <div class="flex justify-between items-start">
                             <div class="flex items-center gap-3"><i data-lucide="building-2" class="w-6 h-6 text-brand-orange"></i><div><h4 class="text-lg font-semibold">SKM guest house</h4></div></div>
@@ -315,14 +332,20 @@
                         <div class="my-4 flex justify-between items-end"><p class="text-sm text-gray-500">2 Rooms</p></div>
                         <div class="mt-4 space-y-2 text-sm"><p class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-gray-400"></i> Tiruvannamalai </p><p class="flex items-center gap-2"><i data-lucide="phone" class="w-4 h-4 text-gray-400"></i> 9003955228</p></div>
                     </div>
-                    <div class="grid grid-cols-1 sm:grid-cols-2">
-                         <a href="tel:9003955228" class="flex items-center justify-center gap-2 bg-brand-orange text-white text-center font-semibold py-3 hover:bg-orange-600 transition sm:rounded-bl-2xl">Contact</a>
-                        <a href="https://wa.me/919003955228?text=Hello!%20I'm%20interested%20in%20booking%20a%20room%20at%20SKM%20guest%20house." target="_blank" class="flex items-center justify-center gap-2 bg-green-500 text-white text-center font-semibold py-3 hover:bg-green-600 transition rounded-b-2xl sm:rounded-b-none sm:rounded-br-2xl">
-                            <i data-lucide="message-circle" class="w-4 h-4"></i> Book on WhatsApp
-                        </a>
+                    <div class="p-4 bg-gray-50 border-t">
+                        <button type="button" class="view-details-btn w-full flex items-center justify-center gap-2 bg-white border border-gray-200 text-gray-700 font-semibold py-3 rounded-2xl hover:bg-gray-50 transition"
+                            data-name="SKM guest house"
+                            data-photo="https://placehold.co/600x400/f5e5d5/4a2c2a?text=SKM"
+                            data-price="₹600 - ₹1200"
+                            data-contact="9003955228"
+                            data-whatsapp="https://wa.me/919003955228?text=I'm%20interested%20in%20SKM">
+                            <i data-lucide="image" class="w-4 h-4"></i> View Details
+                        </button>
                     </div>
                 </div>
+
                 <div class="card overflow-hidden">
+                    <img src="tvm.jpeg" alt="Arunachala Stays" class="w-full h-48 object-cover">
                     <div class="p-6">
                         <div class="flex justify-between items-start">
                             <div class="flex items-center gap-3"><i data-lucide="bed-double" class="w-6 h-6 text-brand-orange"></i><div><h4 class="text-lg font-semibold">Arunachala Stays</h4></div></div>
@@ -332,172 +355,27 @@
                         <div class="my-4 flex justify-between items-end"><p class="text-sm text-gray-500">1 Room</p></div>
                         <div class="mt-4 space-y-2 text-sm"><p class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-gray-400"></i> Near Gandhi nagar</p><p class="flex items-center gap-2"><i data-lucide="phone" class="w-4 h-4 text-gray-400"></i> 9003955228</p></div>
                     </div>
-                    <div class="grid grid-cols-1 sm:grid-cols-2">
-                        <a href="tel:9003955228" class="flex items-center justify-center gap-2 bg-brand-orange text-white text-center font-semibold py-3 hover:bg-orange-600 transition sm:rounded-bl-2xl">Contact</a>
-                        <a href="https://wa.me/919003955228?text=Hello!%20I'm%20interested%20in%20booking%20a%20room%20at%20Arunachala%20Stays." target="_blank" class="flex items-center justify-center gap-2 bg-green-500 text-white text-center font-semibold py-3 hover:bg-green-600 transition rounded-b-2xl sm:rounded-b-none sm:rounded-br-2xl">
-                            <i data-lucide="message-circle" class="w-4 h-4"></i> Book on WhatsApp
-                        </a>
+                    <div class="p-4 bg-gray-50 border-t">
+                        <button type="button" class="view-details-btn w-full flex items-center justify-center gap-2 bg-white border border-gray-200 text-gray-700 font-semibold py-3 rounded-2xl hover:bg-gray-50 transition"
+                            data-name="Arunachala Stays"
+                            data-photo="tvm.jpeg"
+                            data-price="₹400 - ₹900"
+                            data-contact="9003955228"
+                            data-whatsapp="https://wa.me/919003955228?text=I'm%20interested%20in%20Arunachala%20Stays">
+                            <i data-lucide="image" class="w-4 h-4"></i> View Details
+                        </button>
                     </div>
                 </div>
+
             </div>
             </div>
         </div>
     </section>
+
+
     
-
-
-        <!-- Digital Marketing Section -->
-    <section id="marketing" class="py-20">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-12">
-                <h3 class="text-3xl md:text-4xl font-bold flex items-center justify-center gap-3">
-                    <i data-lucide="flame" class="text-brand-orange"></i> Grow Your Business <i data-lucide="flame" class="text-brand-orange"></i>
-                </h3>
-                <p class="mt-2 text-gray-600">Expert digital marketing services to boost your online presence.</p>
-            </div>
-            <div class="max-w-4xl mx-auto mb-12">
-                <div class="rounded-2xl overflow-hidden shadow-lg group relative">
-                    <img src="https://placehold.co/1200x600/f5e5d5/4a2c2a?text=Digital+Marketing" alt="Digital Marketing" class="w-full h-full object-cover">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
-                    <div class="absolute top-4 left-4">
-                        <span class="tag tag-yellow">Infinity Services</span>
-                    </div>
-                    <div class="absolute bottom-0 left-0 right-0 p-6 text-white text-center">
-                        <h4 class="text-3xl font-bold">Digital Marketing Services</h4>
-                        <p class="mt-1">Promote your business online and reach more customers with our tailored marketing solutions.</p>
-                        <a href="https://wa.me/918680848193?text=Hello!%20I'm%20interested%20in%20your%20digital%20marketing%20services%20for%20my%20business%20in%20Tiruvannamalai." target="_blank" class="mt-4 inline-flex items-center gap-2 bg-white text-brand-orange font-semibold py-2 px-6 rounded-lg hover:bg-orange-100 transition">
-                            <i data-lucide="message-circle"></i> Inquire Now
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </section>
-
-    <!-- Exclusive Shop Offers Section -->
-    <section id="offers" class="py-20">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-12">
-                <h3 class="text-3xl md:text-4xl font-bold flex items-center justify-center gap-3">
-                    <i data-lucide="flame" class="text-brand-orange"></i> Exclusive Shop Offers <i data-lucide="flame" class="text-brand-orange"></i>
-                </h3>
-                <p class="mt-2 text-gray-600">Discover the best deals and discounts from local shops in Tiruvannamalai.</p>
-                <a href="https://wa.me/918680848193?text=Hello!%20I%20would%20like%20to%20inquire%20about%20listing%20an%20offer%20for%20my%20shop%20on%20Info%2Tiruvannamalai." target="_blank" class="mt-4 inline-flex items-center gap-2 bg-green-500 text-white font-semibold py-2 px-4 rounded-lg shadow-md hover:bg-green-600 transition">
-                    <i data-lucide="message-circle" class="w-5 h-5"></i> List Your Offer
-                </a>
-            </div>
-            <!-- <div class="bg-gradient-to-r from-orange-500 to-red-500 rounded-2xl p-8 md:p-12 text-white flex flex-col md:flex-row justify-between items-center max-w-5xl mx-auto shadow-lg">
-                <div>
-                    <span class="tag bg-red-600 text-white">Hot Deal</span>
-                    <h4 class="text-4xl font-bold mt-2">Festival Mega Sale</h4>
-                    <p class="mt-2 text-orange-100">Save up to 50% on selected items across multiple stores.</p>
-                </div>
-                <div class="text-center mt-6 md:mt-0">
-                    <p class="text-6xl font-bold">50%</p>
-                    <p class="font-semibold">OFF</p>
-                    <a href="#" class="mt-4 inline-block bg-white text-orange-600 font-semibold py-2 px-6 rounded-lg hover:bg-orange-100 transition">View All Offers</a>
-                </div>
-            </div> -->
-            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
-                <!-- Offer Cards -->
-                <div class="card p-6">
-                    <div class="flex justify-between items-start">
-                        <h4 class="text-lg font-semibold">Farm Fresh Organics</h4>
-                        <i data-lucide="flame" class="w-4 h-4 text-brand-orange"></i>
-                    </div>
-                    <span class="tag tag-yellow text-xs mt-1">Festival Sale</span>
-                    <p class="text-sm text-gray-500 mt-1">Organics product</p>
-                    <div class="mt-4 space-y-2 text-sm">
-                        <p class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-gray-400"></i> 110/5, Vettavalam Road</p>
-                        <p class="flex items-center gap-2"><i data-lucide="calendar" class="w-4 h-4 text-gray-400"></i> Valid until: Dec 31, 2025</p>
-                    </div>
-                    <a href="#" class="block text-center w-full mt-6 bg-brand-orange text-white text-sm font-semibold py-3 rounded-lg hover:bg-orange-600 transition">Locate Shop</a>
-                </div>
-                 <div class="card p-6">
-                    <div class="flex justify-between items-start">
-                        <h4 class="text-lg font-semibold">Section foot wear</h4>
-                        <i data-lucide="flame" class="w-4 h-4 text-brand-orange"></i>
-                    </div>
-                    <span class="tag tag-blue text-xs mt-1">Special Offer</span>
-                    <p class="text-sm text-gray-500 mt-1">Trending shoes and slippers available</p>
-                    <div class="mt-4 space-y-2 text-sm">
-                        <p class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-gray-400"></i> Sannadhi Street</p>
-                        <p class="flex items-center gap-2"><i data-lucide="calendar" class="w-4 h-4 text-gray-400"></i> Valid until: Oct 25, 2025</p>
-                    </div>
-                    <a href="#" class="block text-center w-full mt-6 bg-brand-orange text-white text-sm font-semibold py-3 rounded-lg hover:bg-orange-600 transition">Locate Shop</a>
-                </div>
-                 <div class="card p-6">
-                    <div class="flex justify-between items-start">
-                        <h4 class="text-lg font-semibold">Balaji EMPORIUM</h4>
-                        <i data-lucide="flame" class="w-4 h-4 text-brand-orange"></i>
-                    </div>
-                    <span class="tag tag-green text-xs mt-1">Seasonal Sale</span>
-                    <p class="text-sm text-gray-500 mt-1">Providing wooden toys</p>
-                    <div class="mt-4 space-y-2 text-sm">
-                        <p class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-gray-400"></i> East Gate</p>
-                        <p class="flex items-center gap-2"><i data-lucide="calendar" class="w-4 h-4 text-gray-400"></i> Valid until: Oct 31, 2025</p>
-                    </div>
-                    <a href="#" class="block text-center w-full mt-6 bg-brand-orange text-white text-sm font-semibold py-3 rounded-lg hover:bg-orange-600 transition">Locate Shop</a>
-                </div>
-                <div class="card p-6">
-                    <div class="flex justify-between items-start">
-                        <h4 class="text-lg font-semibold">Unique mens wear</h4>
-                        <i data-lucide="flame" class="w-4 h-4 text-brand-orange"></i>
-                    </div>
-                    <span class="tag tag-blue text-xs mt-1">Men's Fashion</span>
-                    <p class="text-sm text-gray-500 mt-1">The latest trends in men's fashion.</p>
-                    <div class="mt-4 space-y-2 text-sm">
-                        <p class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-gray-400"></i> Tiruvanamalai</p>
-                        <p class="flex items-center gap-2"><i data-lucide="phone" class="w-4 h-4 text-gray-400"></i> 9597958453</p>
-                    </div>
-                    <a href="tel:9597958453" class="block text-center w-full mt-6 bg-brand-orange text-white text-sm font-semibold py-3 rounded-lg hover:bg-orange-600 transition">Contact</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-
     <!-- Local Services Section -->
                  <section id="services" class="py-20 bg-white">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-12">
-                <h3 class="text-3xl md:text-4xl font-bold flex items-center justify-center gap-3">
-                    <i data-lucide="flame" class="text-brand-orange"></i> In Proud Partnership with Our Promoters <i data-lucide="flame" class="text-brand-orange"></i>
-                </h3>
-                <p class="mt-2 text-gray-600">Big shoot-out to our Promotion partners.</p>
-               
-            </div>
-
-            
-            <div class="max-w-3xl mx-auto mb-12">
-                <div class="rounded-2xl overflow-hidden shadow-lg group relative">
-                    <img src="yum.jpeg" alt="Yum Sandwich Cafe" class="w-full h-full object-cover"> <!-- Consider using a higher resolution image for better quality -->
-                    <!-- Logo in the background -->
-                    <img src="yum.jpeg" alt="Logo" class="absolute inset-0 m-auto h-16 w-16 opacity-10">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
-                    <div class="absolute top-4 left-4">
-                        <span class="tag tag-yellow">Business partners</span>
-                    </div>
-                    <div class="absolute inset-0 flex flex-col items-center justify-center p-6 text-white text-center">
-                        <h4 class="text-3xl font-bold">Yum Sandwich Cafe</h4>
-                        <p class="mt-1">TamilNadu's most growing brand with 25+ outlets.</p>
-                        <a href="https://wa.me/918680848193?text=Hello!%20I'm%20interested%20in%20a%20franchise%20for%20Yum%20Sandwich%20Cafe." target="_blank" class="mt-4 inline-flex items-center gap-2 bg-white text-brand-orange font-semibold py-2 px-6 rounded-lg hover:bg-orange-100 transition">
-                            <i data-lucide="message-circle"></i> For franchise inquiries
-                        </a>
-                    </div>
-                </div>
-                <div class="text-center mb-12">
-                 <p class="mt-2 text-gray-600">For advertising and partnership opportunities, reach out to us!</p>
-                <a href="https://wa.me/918680848193?text=Hello!%20I'm%20interested%20in%20advertising%20and%20partnership%20opportunities." target="_blank" class="mt-4 inline-flex items-center gap-2 bg-brand-orange text-white font-semibold py-2 px-6 rounded-lg hover:bg-orange-600 transition">
-                    <i data-lucide="message-circle"></i> Contact Us
-                </a>
-            </div>
-            </div>
-            
-                <section id="services" class="py-20 bg-white">
         <div class="container mx-auto px-6">
             <div class="text-center mb-12">
                 <h3 class="text-3xl md:text-4xl font-bold flex items-center justify-center gap-3">
@@ -603,6 +481,159 @@
             </div>
         </div>
     </section>
+    
+
+
+        <!-- Digital Marketing Section -->
+    <section id="marketing" class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h3 class="text-3xl md:text-4xl font-bold flex items-center justify-center gap-3">
+                    <i data-lucide="flame" class="text-brand-orange"></i> Grow Your Business <i data-lucide="flame" class="text-brand-orange"></i>
+                </h3>
+                <p class="mt-2 text-gray-600">Expert digital marketing services to boost your online presence.</p>
+            </div>
+            <div class="max-w-4xl mx-auto mb-12">
+                <div class="rounded-2xl overflow-hidden shadow-lg group relative">
+                    <img src="https://placehold.co/1200x600/f5e5d5/4a2c2a?text=Digital+Marketing" alt="Digital Marketing" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                    <div class="absolute top-4 left-4">
+                        <span class="tag tag-yellow">Infinity Services</span>
+                    </div>
+                    <div class="absolute bottom-0 left-0 right-0 p-6 text-white text-center">
+                        <h4 class="text-3xl font-bold">Digital Marketing Services</h4>
+                        <p class="mt-1">Promote your business online and reach more customers with our tailored marketing solutions.</p>
+                        <a href="https://wa.me/918680848193?text=Hello!%20I'm%20interested%20in%20your%20digital%20marketing%20services%20for%20my%20business%20in%20Tiruvannamalai." target="_blank" class="mt-4 inline-flex items-center gap-2 bg-white text-brand-orange font-semibold py-2 px-6 rounded-lg hover:bg-orange-100 transition">
+                            <i data-lucide="message-circle"></i> Inquire Now
+                        </a>
+                    </div>
+                </div>
+            <div class="container mx-auto px-6">
+                <br>
+                <br>
+                <br>
+            <div class="text-center mb-12">
+                <h3 class="text-3xl md:text-4xl font-bold flex items-center justify-center gap-3">
+                    <i data-lucide="flame" class="text-brand-orange"></i> In Proud Partnership with Our Promoters <i data-lucide="flame" class="text-brand-orange"></i>
+                </h3>
+                <p class="mt-2 text-gray-600">Big shoot-out to our Promotion partners.</p>
+                         
+            <div class="max-w-3xl mx-auto mb-12">
+                <div class="rounded-2xl overflow-hidden shadow-lg group relative">
+                    <img src="yum.jpeg" alt="Yum Sandwich Cafe" class="w-full h-full object-cover"> <!-- Consider using a higher resolution image for better quality -->
+                    <!-- Logo in the background -->
+                    <img src="yum.jpeg" alt="Logo" class="absolute inset-0 m-auto h-16 w-16 opacity-10">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                    <div class="absolute top-4 left-4">
+                        <span class="tag tag-yellow">Business partners</span>
+                    </div>
+            </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Exclusive Shop Offers Section -->
+    <section id="offers" class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h3 class="text-3xl md:text-4xl font-bold flex items-center justify-center gap-3">
+                    <i data-lucide="flame" class="text-brand-orange"></i> Exclusive Shop Offers <i data-lucide="flame" class="text-brand-orange"></i>
+                </h3>
+                <p class="mt-2 text-gray-600">Discover the best deals and discounts from local shops in Tiruvannamalai.</p>
+                <a href="https://wa.me/918680848193?text=Hello!%20I%20would%20like%20to%20inquire%20about%20listing%20an%20offer%20for%20my%20shop%20on%20Info%2Tiruvannamalai." target="_blank" class="mt-4 inline-flex items-center gap-2 bg-green-500 text-white font-semibold py-2 px-4 rounded-lg shadow-md hover:bg-green-600 transition">
+                    <i data-lucide="message-circle" class="w-5 h-5"></i> List Your Offer
+                </a>
+            </div>
+            <!-- <div class="bg-gradient-to-r from-orange-500 to-red-500 rounded-2xl p-8 md:p-12 text-white flex flex-col md:flex-row justify-between items-center max-w-5xl mx-auto shadow-lg">
+                <div>
+                    <span class="tag bg-red-600 text-white">Hot Deal</span>
+                    <h4 class="text-4xl font-bold mt-2">Festival Mega Sale</h4>
+                    <p class="mt-2 text-orange-100">Save up to 50% on selected items across multiple stores.</p>
+                </div>
+                <div class="text-center mt-6 md:mt-0">
+                    <p class="text-6xl font-bold">50%</p>
+                    <p class="font-semibold">OFF</p>
+                    <a href="#" class="mt-4 inline-block bg-white text-orange-600 font-semibold py-2 px-6 rounded-lg hover:bg-orange-100 transition">View All Offers</a>
+                </div>
+            </div> -->
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+                <!-- Offer Cards -->
+                <div class="card p-6">
+                    <div class="flex justify-between items-start">
+                        <h4 class="text-lg font-semibold">Farm Fresh Organics</h4>
+                        <i data-lucide="flame" class="w-4 h-4 text-brand-orange"></i>
+                    </div>
+                    <span class="tag tag-yellow text-xs mt-1">Festival Sale</span>
+                    <p class="text-sm text-gray-500 mt-1">Organics product</p>
+                    <div class="mt-4 space-y-2 text-sm">
+                        <p class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-gray-400"></i> 110/5, Vettavalam Road</p>
+                        <p class="flex items-center gap-2"><i data-lucide="calendar" class="w-4 h-4 text-gray-400"></i> Valid until: Dec 31, 2025</p>
+                    </div>
+                    <a href="#" class="block text-center w-full mt-6 bg-brand-orange text-white text-sm font-semibold py-3 rounded-lg hover:bg-orange-600 transition">Locate Shop</a>
+                </div>
+                 <div class="card p-6">
+                    <div class="flex justify-between items-start">
+                        <h4 class="text-lg font-semibold">Selection footwear</h4>
+                        <i data-lucide="flame" class="w-4 h-4 text-brand-orange"></i>
+                    </div>
+                    <span class="tag tag-blue text-xs mt-1">Special Offer</span>
+                    <p class="text-sm text-gray-500 mt-1">Trending shoes and slippers available</p>
+                    <div class="mt-4 space-y-2 text-sm">
+                        <p class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-gray-400"></i> Sannadhi Street</p>
+                        <p class="flex items-center gap-2"><i data-lucide="calendar" class="w-4 h-4 text-gray-400"></i> Valid until: Oct 25, 2025</p>
+                    </div>
+                    <a href="#" class="block text-center w-full mt-6 bg-brand-orange text-white text-sm font-semibold py-3 rounded-lg hover:bg-orange-600 transition">Locate Shop</a>
+                </div>
+                 <div class="card p-6">
+                    <div class="flex justify-between items-start">
+                        <h4 class="text-lg font-semibold">Balaji EMPORIUM</h4>
+                        <i data-lucide="flame" class="w-4 h-4 text-brand-orange"></i>
+                    </div>
+                    <span class="tag tag-green text-xs mt-1">Seasonal Sale</span>
+                    <p class="text-sm text-gray-500 mt-1">Providing wooden toys</p>
+                    <div class="mt-4 space-y-2 text-sm">
+                        <p class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-gray-400"></i> East Gate</p>
+                        <p class="flex items-center gap-2"><i data-lucide="calendar" class="w-4 h-4 text-gray-400"></i> Valid until: Oct 31, 2025</p>
+                    </div>
+                    <a href="#" class="block text-center w-full mt-6 bg-brand-orange text-white text-sm font-semibold py-3 rounded-lg hover:bg-orange-600 transition">Locate Shop</a>
+                </div>
+                <div class="card p-6">
+                    <div class="flex justify-between items-start">
+                        <h4 class="text-lg font-semibold">Unique mens wear</h4>
+                        <i data-lucide="flame" class="w-4 h-4 text-brand-orange"></i>
+                    </div>
+                    <span class="tag tag-blue text-xs mt-1">Men's Fashion</span>
+                    <p class="text-sm text-gray-500 mt-1">The latest trends in men's fashion.</p>
+                    <div class="mt-4 space-y-2 text-sm">
+                        <p class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-gray-400"></i> Tiruvanamalai</p>
+                        <p class="flex items-center gap-2"><i data-lucide="phone" class="w-4 h-4 text-gray-400"></i> 9597958453</p>
+                    </div>
+                    <a href="tel:9597958453" class="block text-center w-full mt-6 bg-brand-orange text-white text-sm font-semibold py-3 rounded-lg hover:bg-orange-600 transition">Contact</a>
+                </div>
+                <!-- New Shop: Sri Kumaran Furniture & Home Appliances -->
+                <div class="card p-6">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h4 class="text-lg font-semibold">Sri Kumaran Furniture & Home Appliances</h4>
+                            <span class="text-sm text-gray-500 block mt-1">Nallavanpalayam — Near Pushpa Mahal</span>
+                        </div>
+                        <i data-lucide="flame" class="w-4 h-4 text-brand-orange"></i>
+                    </div>
+                    <p class="mt-3 text-sm text-gray-600">Original teak wood cots & shofas. Own production steel beros. Best price in Tiruvannamalai.</p>
+                    <div class="mt-4 space-y-2 text-sm">
+                        <p class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-gray-400"></i> Nallavanpalayam, Near Pushpa Mahal</p>
+                        <p class="flex items-center gap-2"><i data-lucide="phone" class="w-4 h-4 text-gray-400"></i> 9751144201</p>
+                    </div>
+                    <a href="tel:9751144201" class="block text-center w-full mt-6 bg-brand-orange text-white text-sm font-semibold py-3 rounded-lg hover:bg-orange-600 transition">Contact</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
 
     <!-- Manpower & Job Vacancy Section -->
     <section id="manpower" class="py-20">
@@ -946,12 +977,15 @@
                         <i data-lucide="car" class="w-4 h-4"></i> Rentals
                     </button>
                 </div>
+                <div class="flex justify-center mb-4">
+                    <a href="https://www.google.com/maps/d/edit?mid=1BMN5o4Z5iSYgFr7X8NBE9kCynNicYhA&usp=sharing" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-sm font-semibold text-brand-orange border border-brand-orange px-3 py-2 rounded-full hover:bg-brand-orange hover:text-white transition">
+                        <i data-lucide="external-link" class="w-4 h-4"></i> Open Full Map
+                    </a>
+                </div>
 
                 <!-- Map Container -->
                 <div id="custom-map-container" class="w-full h-[600px] rounded-lg overflow-hidden relative">
-                    <div class="absolute inset-0 bg-gray-200 flex items-center justify-center">
-                        <p class="text-gray-500">Loading map...</p>
-                    </div>
+                    <iframe id="custom-mymaps-iframe" src="https://www.google.com/maps/d/u/0/embed?mid=1BMN5o4Z5iSYgFr7X8NBE9kCynNicYhA" class="absolute inset-0 w-full h-full border-0" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
 
                 <style>
@@ -1123,8 +1157,8 @@
                     <h5 class="font-semibold">Contact Us</h5>
                     <ul class="mt-4 space-y-2 text-sm text-gray-600">
                         <li class="flex items-start gap-2"><i data-lucide="map-pin" class="w-4 h-4 mt-1 text-gray-400"></i> Tiruvannamalai, Tamil Nadu</li>
-                        <li class="flex items-start gap-2"><i data-lucide="phone" class="w-4 h-4 mt-1 text-gray-400"></i> 8680848193</li>
-                        <li class="flex items-start gap-2"><i data-lucide="mail" class="w-4 h-4 mt-1 text-gray-400"></i> info@tiruvannamalai.com</li>
+                        <li class="flex items-start gap-2"><i data-lucide="phone" class="w-4 h-4 mt-1 text-gray-400"></i> 9092284574</li>
+                        <li class="flex items-start gap-2"><i data-lucide="mail" class="w-4 h-4 mt-1 text-gray-400"></i> sarathitime@gmail.com</li>
                     </ul>
                 </div>
             </div>
@@ -1140,8 +1174,7 @@
     </footer>
 
     <!-- Welcome Popup -->
-    <div id="welcome-popup" class="fixed inset-0 bg-black bg-opacity-60 backdrop-blur-sm z-[100] flex items-center justify-center p-4 transition-opacity duration-300">
-        <div class="bg-white rounded-2xl shadow-xl p-6 md:p-8 max-w-2xl w-full transform transition-all scale-95 opacity-0" id="welcome-popup-content">
+        <div id="welcome-popup" class="fixed inset-0 bg-black bg-opacity-60 backdrop-blur-sm z-[100] flex items-center justify-center p-4 transition-opacity duration-300">        <div class="bg-white rounded-2xl shadow-xl p-6 md:p-8 max-w-2xl w-full transform transition-all scale-95 opacity-0" id="welcome-popup-content">
             <div class="flex justify-between items-center mb-4">
                 <h3 class="text-2xl font-bold text-brand-orange">Karthigai Deepam 2025</h3>
                 <button id="close-welcome-popup" class="text-gray-400 hover:text-gray-800 transition-colors">
@@ -1258,7 +1291,38 @@
         </div>
     </div>
 
-    <script>
+            <!-- Removed duplicate/broken Room Details Modal (kept single clean modal below) -->
+
+            <!-- Room Details Modal (single, clean instance) -->
+            <div id="room-details-modal" class="fixed inset-0 bg-black bg-opacity-60 backdrop-blur-sm z-[100] hidden items-center justify-center p-4">
+                <div class="bg-white rounded-2xl shadow-xl p-6 md:p-8 max-w-2xl w-full transform transition-all scale-95 opacity-0" id="room-details-modal-content">
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 id="room-name" class="text-2xl font-bold text-gray-800">Room Name</h3>
+                        <button id="close-room-details" class="text-gray-400 hover:text-gray-800 transition-colors">
+                            <i data-lucide="x" class="w-6 h-6"></i>
+                        </button>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <img id="room-photo" src="https://placehold.co/800x600/f5e5d5/4a2c2a?text=Room" alt="Room photo" class="w-full h-56 object-cover rounded-lg">
+                        </div>
+                        <div class="flex flex-col justify-between">
+                            <div>
+                                <p id="room-price" class="text-lg font-semibold text-gray-700">Price Range: ₹0 - ₹0</p>
+                                <p id="room-contact" class="mt-3 text-sm text-gray-600">Contact: <a id="room-contact-link" href="#" class="font-semibold text-brand-orange">tel</a></p>
+                            </div>
+                            <div class="mt-4">
+                                <a id="room-whatsapp" href="#" target="_blank" class="inline-flex items-center gap-2 bg-green-500 text-white font-semibold py-3 px-4 rounded-lg hover:bg-green-600 transition"><i data-lucide="message-circle" class="w-4 h-4"></i> Message on WhatsApp</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-6 text-right">
+                        <button id="dismiss-room-details" class="bg-gray-200 text-gray-700 font-semibold py-2 px-6 rounded-lg hover:bg-gray-300 transition">Close</button>
+                    </div>
+                </div>
+            </div>
+
+            <script>
         lucide.createIcons();
 
         // --- Marketing Modal Logic ---
@@ -1409,7 +1473,8 @@
         }
 
         // --- Welcome Popup Logic ---
-        const welcomePopup = document.getElementById('welcome-popup');
+// --- Welcome Popup Logic (safer) ---
+         const welcomePopup = document.getElementById('welcome-popup');
         const welcomePopupContent = document.getElementById('welcome-popup-content');
         const closeWelcomePopupBtn = document.getElementById('close-welcome-popup');
         const dismissWelcomePopupBtn = document.getElementById('dismiss-welcome-popup');
@@ -1442,131 +1507,108 @@
         dismissWelcomePopupBtn.addEventListener('click', closeWelcomePopup);
         openWelcomePopupFab.addEventListener('click', openWelcomePopup);
 
-    </script>
-    <script src="dynamic-updates.js"></script>
 
-    <!-- Google Maps API and Custom Map Script -->
-    <script>
-        let map;
-        let markers = [];
-        const locations = [
-            // --- Stays ---
-            { lat: 12.2352, lng: 79.0753, name: 'Omkara - The Fives Guest House', category: 'stay', description: 'Premium guest house available' },
-            { lat: 12.2289, lng: 79.0721, name: 'Sudha stays', category: 'stay', description: 'Home Stay available' },
-            { lat: 12.2310, lng: 79.0765, name: 'SKM guest house', category: 'stay', description: 'Premium guest house available' },
-            
-            // --- Dining ---
-            { lat: 12.2450, lng: 79.0850, name: 'TN25 Night Hub Briyani', category: 'dining', description: 'Authentic firewood chicken Biryani' },
-            { lat: 12.2258, lng: 79.0742, name: 'Hotel Ponrayar', category: 'dining', description: 'Authentic Tamil thali' },
-            { lat: 12.2201, lng: 79.0689, name: 'Taj china town', category: 'dining', description: 'All Chinese dishes available' },
 
-            // --- Services ---
-            { lat: 12.2295, lng: 79.0781, name: 'Nk Makeover Artistry', category: 'services', description: 'Budget friendly makeup services' },
-            { lat: 12.2333, lng: 79.0719, name: 'Aadhu decores', category: 'services', description: 'Premium and budget friendly decoration' },
-            { lat: 12.2276, lng: 79.0758, name: 'RD MOBILE SERVICE', category: 'services', description: 'Doorstep mobile and laptop service' },
-
-            // --- Rentals ---
-            { lat: 12.2384, lng: 79.0744, name: 'LIMRA TRAVELS', category: 'rentals', description: 'Taxi service for local and outstation trips' },
-            { lat: 12.2411, lng: 79.0798, name: 'South tourism', category: 'rentals', description: 'Vehicle rentals including tempo travellers' }
-        ];
-
-        function initMap() {
-            const tiruvannamalai = { lat: 12.235, lng: 79.075 };
-            map = new google.maps.Map(document.getElementById("custom-map-container"), {
-                zoom: 14,
-                center: tiruvannamalai,
-                mapId: 'YOUR_MAP_ID' // Optional: For cloud-based map styling
+        // --- Generic Modal Logic ---
+        document.querySelectorAll('.open-modal-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                const modalId = button.getAttribute('data-modal-target');
+                const modal = document.getElementById(modalId);
+                if (modal) {
+                    const modalContent = modal.querySelector('div[id$="-modal-content"]');
+                    modal.classList.remove('hidden');
+                    modal.classList.add('flex');
+                    setTimeout(() => {
+                        modalContent.classList.remove('scale-95', 'opacity-0');
+                    }, 10);
+                }
             });
+        });
 
-            const icons = {
-                stay: { icon: "https://maps.google.com/mapfiles/ms/icons/blue-dot.png" },
-                dining: { icon: "https://maps.google.com/mapfiles/ms/icons/red-dot.png" },
-                services: { icon: "https://maps.google.com/mapfiles/ms/icons/yellow-dot.png" },
-                rentals: { icon: "https://maps.google.com/mapfiles/ms/icons/green-dot.png" },
-            };
-
-            locations.forEach(location => {
-                const marker = new google.maps.Marker({
-                    position: { lat: location.lat, lng: location.lng },
-                    map: map,
-                    title: location.name,
-                    icon: icons[location.category]?.icon,
-                    category: location.category
-                });
-
-                const infowindow = new google.maps.InfoWindow({
-                    content: `<strong>${location.name}</strong><p>${location.description}</p>`
-                });
-
-                marker.addListener("click", () => {
-                    infowindow.open(map, marker);
-                });
-                markers.push(marker);
-            });
-        }
-
-        document.querySelectorAll('.map-filter-btn').forEach(button => {
+        document.querySelectorAll('.close-modal-btn').forEach(button => {
             button.addEventListener('click', (e) => {
-                const category = e.currentTarget.getAttribute('data-category');
-                
-                // Update active button style
-                document.querySelectorAll('.map-filter-btn').forEach(btn => btn.classList.remove('active-filter'));
-                e.currentTarget.classList.add('active-filter');
+                const modal = e.target.closest('.fixed.inset-0');
+                if (modal) {
+                    const modalContent = modal.querySelector('div[id$="-modal-content"]');
+                    modalContent.classList.add('scale-95', 'opacity-0');
+                    setTimeout(() => {
+                        modal.classList.add('hidden');
+                        modal.classList.remove('flex');
+                    }, 200);
+                }
+            });
+        });
 
-                markers.forEach(marker => {
-                    if (category === 'all' || marker.category === category) {
-                        marker.setVisible(true);
-                    } else {
-                        marker.setVisible(false);
-                    }
+        // Close modal on background click
+        document.querySelectorAll('.fixed.inset-0').forEach(modal => {
+            modal.addEventListener('click', (event) => {
+                if (event.target === modal) {
+                    const modalContent = modal.querySelector('div[id$="-modal-content"]');
+                    modalContent.classList.add('scale-95', 'opacity-0');
+                    setTimeout(() => {
+                        modal.classList.add('hidden');
+                        modal.classList.remove('flex');
+                    }, 200);
+                }
+            });
+        });
+
+        // --- Room Details Modal Logic ---
+        (function() {
+            const roomModal = document.getElementById('room-details-modal');
+            const roomModalContent = document.getElementById('room-details-modal-content');
+            const roomNameEl = document.getElementById('room-name');
+            const roomPhotoEl = document.getElementById('room-photo');
+            const roomPriceEl = document.getElementById('room-price');
+            const roomContactLink = document.getElementById('room-contact-link');
+            const roomWhatsappLink = document.getElementById('room-whatsapp');
+            const closeRoomBtn = document.getElementById('close-room-details');
+            const dismissRoomBtn = document.getElementById('dismiss-room-details');
+
+            function openRoomModal(data) {
+                if (!roomModal || !roomModalContent) return;
+                roomNameEl.textContent = data.name || 'Room';
+                roomPhotoEl.src = data.photo || roomPhotoEl.src;
+                roomPriceEl.textContent = data.price ? ('Price Range: ' + data.price) : 'Price not available';
+                if (roomContactLink) {
+                    if (data.contact) { roomContactLink.href = 'tel:' + data.contact; roomContactLink.textContent = data.contact; }
+                    else { roomContactLink.href = '#'; roomContactLink.textContent = 'Contact'; }
+                }
+                if (roomWhatsappLink) roomWhatsappLink.href = data.whatsapp || '#';
+
+                roomModal.classList.remove('hidden');
+                roomModal.classList.add('flex');
+                setTimeout(() => { roomModalContent.classList.remove('scale-95', 'opacity-0'); }, 10);
+            }
+
+            function closeRoomModal() {
+                if (!roomModalContent) return;
+                roomModalContent.classList.add('scale-95', 'opacity-0');
+                setTimeout(() => { roomModal.classList.add('hidden'); roomModal.classList.remove('flex'); }, 200);
+            }
+
+            document.querySelectorAll('.view-details-btn').forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const data = {
+                        name: btn.dataset.name,
+                        photo: btn.dataset.photo,
+                        price: btn.dataset.price,
+                        contact: btn.dataset.contact,
+                        whatsapp: btn.dataset.whatsapp
+                    };
+                    openRoomModal(data);
                 });
             });
-        });
-    </script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&map_ids=YOUR_MAP_ID"></script>
 
-</body>
-</html>
-                <!-- langTaBtn.classList.add('bg-gray-100', 'text-gray-500', 'border-gray-300');
-                langTaBtn.classList.remove('bg-brand-orange', 'text-white');
-            });
-        }
-
-        // --- Welcome Popup Logic ---
-        const welcomePopup = document.getElementById('welcome-popup');
-        const welcomePopupContent = document.getElementById('welcome-popup-content');
-        const closeWelcomePopupBtn = document.getElementById('close-welcome-popup');
-        const dismissWelcomePopupBtn = document.getElementById('dismiss-welcome-popup');
-        const openWelcomePopupFab = document.getElementById('open-welcome-popup-fab');
-
-        const closeWelcomePopup = () => {
-            welcomePopupContent.classList.add('scale-95', 'opacity-0');
-            welcomePopup.classList.add('opacity-0');
-            setTimeout(() => {
-                welcomePopup.classList.add('hidden');
-                openWelcomePopupFab.classList.remove('hidden');
-            }, 300);
-        };
-
-        const openWelcomePopup = () => {
-            welcomePopup.classList.remove('hidden');
-            setTimeout(() => {
-                welcomePopup.classList.remove('opacity-0');
-                welcomePopupContent.classList.remove('scale-95', 'opacity-0');
-            }, 10);
-            openWelcomePopupFab.classList.add('hidden');
-        }
-
-        // Show popup on load
-        window.addEventListener('load', () => {
-            setTimeout(openWelcomePopup, 1000); // Delay 1s before showing
-        });
-
-        closeWelcomePopupBtn.addEventListener('click', closeWelcomePopup);
-        dismissWelcomePopupBtn.addEventListener('click', closeWelcomePopup);
-        openWelcomePopupFab.addEventListener('click', openWelcomePopup); -->
+            if (closeRoomBtn) closeRoomBtn.addEventListener('click', closeRoomModal);
+            if (dismissRoomBtn) dismissRoomBtn.addEventListener('click', closeRoomModal);
+            if (roomModal) roomModal.addEventListener('click', (event) => { if (event.target === roomModal) closeRoomModal(); });
+            document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeRoomModal(); });
+        })();
 
     </script>
     <script src="dynamic-updates.js"></script>
+
 </body>
 </html>
