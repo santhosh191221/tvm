@@ -10,6 +10,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const weatherTemp = document.getElementById('weather-temp');
     const weatherDescription = document.getElementById('weather-description');
 
+    // --- Dynamic Traffic Elements ---
+    const trafficStatusText = document.getElementById('traffic-status-text');
+    const trafficDescription = document.getElementById('traffic-description');
+    const trafficRoutesStatus = document.getElementById('traffic-routes-status');
+    const trafficParkingStatus = document.getElementById('traffic-parking-status');
+
     // --- Dynamic Date Element ---
     const liveDateElement = document.getElementById('live-date');
 
@@ -64,6 +70,35 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     /**
+     * Updates the traffic advisory display.
+     * @param {string} status - 'Normal', 'Moderate', or 'Heavy'.
+     * @param {string} description - A short traffic summary.
+     * @param {object} routes - Status and color for main routes.
+     * @param {object} parking - Status and color for parking.
+     */
+    function updateTrafficStatus(status, description, routes, parking) {
+        if (trafficStatusText && trafficDescription && trafficRoutesStatus && trafficParkingStatus) {
+            // Update main status text and color
+            trafficStatusText.textContent = status;
+            trafficStatusText.className = 'tag'; // Reset
+            if (status === 'Normal') trafficStatusText.classList.add('tag-green');
+            else if (status === 'Moderate') trafficStatusText.classList.add('tag-yellow');
+            else trafficStatusText.classList.add('tag-red'); // Assuming a 'tag-red' style exists
+
+            // Update description
+            trafficDescription.textContent = description;
+
+            // Update routes status
+            trafficRoutesStatus.textContent = routes.status;
+            trafficRoutesStatus.className = `font-semibold ${routes.color}`;
+
+            // Update parking status
+            trafficParkingStatus.textContent = parking.status;
+            trafficParkingStatus.className = `font-semibold ${parking.color}`;
+        }
+    }
+
+    /**
      * Updates the live date display with the current date.
      */
     function updateLiveDate() {
@@ -75,21 +110,57 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // --- Example Usage ---
-    // This is where you would fetch real data.
-    // For now, we'll just simulate updating the values after a few seconds.
+    // --- Dynamic Data Simulation ---
+    // Arrays of possible states to cycle through for a dynamic effect.
+    const crowdStates = [
+        { status: 'Low', percentage: 30 },
+        { status: 'Moderate', percentage: 65 },
+        { status: 'High', percentage: 90 },
+        { status: 'Moderate', percentage: 55 }
+    ];
+    let currentCrowdIndex = 0;
 
-    setTimeout(() => {
-        // Example: Update crowd status to "High"
-        updateCrowdStatus('High', 85);
+    const weatherStates = [
+        { status: 'Clear', icon: 'sun', tempHtml: '32°<span class="text-xl">/25°C</span>', description: 'Sunny, with light breeze.' },
+        { status: 'Cloudy', icon: 'cloud', tempHtml: '28°<span class="text-xl">/22°C</span>', description: 'Partly cloudy skies.' },
+        { status: 'Rainy', icon: 'cloud-rain', tempHtml: '26°<span class="text-xl">/21°C</span>', description: 'Light showers expected.' },
+        { status: 'Clear', icon: 'moon', tempHtml: '24°<span class="text-xl">/20°C</span>', description: 'Clear night sky.' }
+    ];
+    let currentWeatherIndex = 0;
 
-        // Example: Update weather to "Cloudy"
-        updateWeather('Cloudy', 'cloud', '28°<span class="text-xl">/22°C</span>', 'Partly cloudy with a chance of rain.');
+    const trafficStates = [
+        { status: 'Normal', description: 'Smooth traffic flow around temple.', routes: { status: 'Clear', color: 'text-green-600' }, parking: { status: 'Available', color: 'text-green-600' } },
+        { status: 'Moderate', description: 'Minor congestion on Girivalam path.', routes: { status: 'Busy', color: 'text-yellow-600' }, parking: { status: 'Limited', color: 'text-yellow-600' } },
+        { status: 'Heavy', description: 'Heavy traffic due to evening rituals.', routes: { status: 'Congested', color: 'text-red-600' }, parking: { status: 'Full', color: 'text-red-600' } },
+        { status: 'Normal', description: 'Traffic has eased after the main event.', routes: { status: 'Clear', color: 'text-green-600' }, parking: { status: 'Available', color: 'text-green-600' } }
+    ];
+    let currentTrafficIndex = 0;
 
-    }, 5000); // Update after 5 seconds
+
+    /**
+     * Simulates a live update by cycling through predefined states.
+     */
+    function simulateLiveUpdates() {
+        // Update Crowd Status
+        const crowd = crowdStates[currentCrowdIndex];
+        updateCrowdStatus(crowd.status, crowd.percentage);
+        currentCrowdIndex = (currentCrowdIndex + 1) % crowdStates.length;
+
+        // Update Weather
+        const weather = weatherStates[currentWeatherIndex];
+        updateWeather(weather.status, weather.icon, weather.tempHtml, weather.description);
+        currentWeatherIndex = (currentWeatherIndex + 1) % weatherStates.length;
+
+        // Update Traffic
+        const traffic = trafficStates[currentTrafficIndex];
+        updateTrafficStatus(traffic.status, traffic.description, traffic.routes, traffic.parking);
+        currentTrafficIndex = (currentTrafficIndex + 1) % trafficStates.length;
+    }
 
     // --- Initializations ---
     updateLiveDate(); // Set the date as soon as the page loads
+    simulateLiveUpdates(); // Initial update on load
+    setInterval(simulateLiveUpdates, 8000); // Re-run the simulation every 8 seconds
 
     // --- Map Zoom Controls ---
     const mapIframe = document.getElementById('location-map-iframe');
